@@ -13,21 +13,13 @@ for i in {1..20} ; do
     echo "GATGGAACTTGACTACGTAAATT"
 done
 
-##display the dna sequence <==== dummy dna
+ #Replace all "T" by "U"
 
-touch mydummydnasequence.fastq
+ ##Je cherche l'occurence "T" dans le fichier mydummydnasequence créé et le remplace par U
 
- echo "GATGGAACTTGACTACGTAAATT" < mydummydnasequence.fastq
-
-
- #Replace all "T" by all "U"
-
- ##Je cherche l'occurence "A" dans le fichier mydummydnasequence créé
-
- grep "A" mydummydnasequence.fastq | tr -s "T" "U" | sort mydummydnasequence.fastq
+echo "GATGGAACTTGACTACGTAAATT" | tr "T" "U" | sort
 
  # End of program
-
 
 
 exit 0
