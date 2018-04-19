@@ -24,7 +24,7 @@ touch mydummydnasequence.fastq
 
  ##Je cherche l'occurence "A" dans le fichier mydummydnasequence créé
 
- grep "A" mydummydnasequence.fastq | tr -s "A" "U" | sort mydummydnasequence.fastq
+ grep "A" mydummydnasequence.fastq | tr -s "T" "U" | sort mydummydnasequence.fastq
 
  # End of program
 
