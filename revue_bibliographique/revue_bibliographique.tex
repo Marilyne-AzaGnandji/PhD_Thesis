@@ -11,6 +11,7 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage[T1]{fontenc}
+\usepackage{amsmath}
 %\usepackage{natbib}
 %\bibliographystyle{plainnat}
 %\newcommand*{\dl}{\cline{2-2}\cline{4-4}}
@@ -66,7 +67,7 @@ possède un climat tropical de type soudano-sahélien (caractérisé par
 des variations pluviométriques considérables allant d’une moyenne de
 350 mm au Nord à plus de 1\,000 mm au Sud-Ouest) avec deux saisons
 très contrastées : la saison des pluies avec des précipitations
-comprises entre 300 mm et 1\,200 mm et la saison sèche durant laquelle
+comprises entre 300\,mm et 1\,200 mm et la saison sèche durant laquelle
 souffle l’harmattan, un vent chaud, sec et chargé de poussière,
 originaire du Sahara. La saison des pluies dure environ 4 mois, entre
 mai-juin et septembre, sa durée est plus courte au nord du
@@ -157,10 +158,10 @@ considérée: très faible pour les variétés cléistogames qui subissent
 une autopollinisation automatique et ainsi leurs fleurs ne s’ouvrent
 qu’après l’anthèse (période terminale\,du développement de la fleur
 depuis son épanouissement jusqu’au flétrissement). Ce taux
-d'autopollinisation est de l’ordre de 5 à 7\% pour les variétés à
+d'autopollinisation est de l’ordre de 5 à 7\,\% pour les variétés à
 panicules compactes\,\cite{Doggett_1988}, et varie largement (20 à
 29\%) pour les variétés à panicules lâches de la race botanique
-Guinea\,\cite{Ollitrault_1987,Chantereau_1994}. De manière
+Guinea \cite{Ollitrault_1987,Chantereau_1994}. De manière
 schématique, la plante du sorgho se présente comme suit:
 
 
@@ -169,7 +170,7 @@ schématique, la plante du sorgho se présente comme suit:
   \begin{center}
     \includegraphics[width=16cm]{images/SchemaComposePage5}
   \end{center}
-  \caption{Plante,graines-Schéma et représentation en champ réel d\'un plant de sorgho}
+  \caption{Plante, graines --- Schéma et représentation en champ réel d'un plant de sorgho.}
    \label{fig-SchemaComposePage5}
 \end{figure}
 
@@ -179,25 +180,26 @@ p.~\pageref{fig-SchemaComposePage5}).
 
 
 Par ailleurs, \citeA[p.~18]{Chantereau_2013}, résument les différentes races du sorgho et
-leurs caractéristiques d'identification (Tableau\ref{table:Chantereau_2013})
+leurs caractéristiques d'identification (Tableau~\ref{tableau:Chantereau_2013}).
 %\footnote{Google books}:
 
 
 %%   %insérer un tableau
 \begin{table}
-\begin{center}
-  \begin{tabular}{|lb{4cm}|b{3.5cm}|b{3.5cm}|}
-   \hline
-  Race & Glumes  & Grains  & Panicules  \\ \hline
-  Bicolor & Glumes longues recouvrant les 3/4 ou la totalité du grain  & Poids de 1000 grains de 15 à 25 g & Panicules lâches \\ \hline
-  Guinea & Glumes généralement longues, ouvertes & Grains elliptiques, plus ou moins aplatis dorso-ventralement, de taille variable & Panicules lâches à semi-lâches, souvent longues à port retombant \\ \hline
-  Caudatum & Glumes courtes adhérant au grain en le recouvrant partiellement & Grains dissymétriques de taille moyenne à grosse & Panicules compactes à semi-compactes souvent portées par un pédoncule crossé \\ \hline
-  Durra & Glumes courtes adhérant au grain en le recouvrant partiellement & Grains plus ou moins sphériques, de taille variable mais le plus souvent gros à très gros & Panicules compactes à semi-compactes souvent portées par un pédoncule crossé \\ \hline
-  Kafir & Glumes courtes adhérant au grain en le recouvrant partiellement & Grains elliptiques, de taille moyenne, poids de 1\,000 grains de 20 à 35 g & Panicules moyennement compactes, souvent de forme longue et cylindrique \\ \hline
-\end{tabular}
-\caption{Principaux caractères identitaires des races du sorgho \protect\cite{Chantereau_2013}.}
-\label{tableau:Chantereau_2013}
-\end{center}
+  \begin{footnotesize}
+    \begin{center}
+      \begin{tabular}{lb{3cm}b{3cm}b{3cm}}
+       \textbf{Race} & \textbf{Glumes}  & \textbf{Grains}  & \textbf{Panicules} \\ \hline
+        Bicolor & Glumes longues recouvrant les 3/4 ou la totalité du grain  & Poids de 1000 grains de 15 à 25 g & Panicules lâches \\ \hline
+        Guinea & Glumes généralement longues, ouvertes & Grains elliptiques, plus ou moins aplatis dorso-ventralement, de taille variable & Panicules lâches à semi-lâches, souvent longues à port retombant \\ \hline
+        Caudatum & Glumes courtes adhérant au grain en le recouvrant partiellement & Grains dissymétriques de taille moyenne à grosse & Panicules compactes à semi-compactes souvent portées par un pédoncule crossé \\ \hline
+        Durra & Glumes courtes adhérant au grain en le recouvrant partiellement & Grains plus ou moins sphériques, de taille variable mais le plus souvent gros à très gros & Panicules compactes à semi-compactes souvent portées par un pédoncule crossé \\ \hline
+        Kafir & Glumes courtes adhérant au grain en le recouvrant partiellement & Grains elliptiques, de taille moyenne, poids de 1\,000 grains de 20 à 35 g & Panicules moyennement compactes, souvent de forme longue et cylindrique \\ 
+      \end{tabular}
+      \caption{Principaux caractères identitaires des races du sorgho \protect\cite{Chantereau_2013}.}
+      \label{tableau:Chantereau_2013}
+    \end{center}
+  \end{footnotesize}
 \end{table}
 
 
@@ -217,16 +219,16 @@ monocotylédones de la famille des Poaceae et de la sous-famille des
 Panicoïdeae.
 
 La figure 2 illustre la classification (cladogramme) phylogénétique
-des Poaceae dont fait partie le sorgho\footnote{\url{https://www.researchgate.net/profile/Nicolas_Paquet/publication/7898966/viewer/AS:102774318567428@1401514715547/background/2.png}}.
+des Poaceae dont fait partie le sorgho \cite{Paquet_2005}.
 
 %%%insérer une image
 
 
 \begin{figure}%
   \begin{center}
-    \includegraphics[width=10cm]{images/PoaceaePhylogeny}
+    \includegraphics[width=10cm]{images/PhylogenyPoacea}
   \end{center}
-\caption{Classification phylogénétique des Poacées.}
+\caption{Classification phylogénétique des Poacées \protect\cite{Paquet_2005}.}
 \end{figure}
 
 
@@ -266,22 +268,31 @@ modernes, mais il existe aussi des maïs de zones sèches. Il est
 particulièrement adapté à la sécheresse en raison d’un ensemble de
 caractéristiques morphologiques et physiologiques, notamment un
 système racinaire étendu, la pruine de ses feuilles qui limite ses
-pertes en eau (figure 1), et une aptitude à interrompre sa croissance
+pertes en eau (figure~1), et une aptitude à interrompre sa croissance
 pendant les périodes de sécheresse et à la reprendre une fois le
 stress disparu. Le sorgho est une plante monocotylédone de la tribu
 des Andropogoneae.Toutes les espèces de cette tribu présentent une
-photosynthèse en C4, ce qui les rend compétitives dans des conditions
-de chaleur et de fort éclairement: ce sont des plantes dites en C4. À
-l’opposé de certaines graminées dites plantes en C3 qui réalisent la
-fixation du carbone en C3, la plante du sorgho dite plante en C4, a un
-avantage compétitif dans ce sens où lorsqu’elle est soumise à la
-sécheresse, à la chaleur et à un faible taux d’azote (N2) ou de
-dioxyde de carbone (CO2) et lorsqu’elle est cultivée par exemple dans
-un environnement à 30\degree{}C, elle perd moins de molécules d’eau
-(les graminées en C3 perdent environ 833 molécules d’eau par molécule
-de CO2 fixée tandis que le sorgho en perd seulement 277). Ceci offre
-donc un avantage aux plantes en C4 (sorgho) dans les environnements
-arides (zone sahélienne au Burkina Faso)
+photosynthèse en $\text{C}_4$. La photosynthèse en $\text{C}_4$ se
+réalise chez de nombreuses graminées tropicales à savoir le maïs, la
+canne à sucre, le mil,le sorgho poussant dans des conditions
+désertiques ou sur des sols salés. Elle se traduit par un type de
+fixation du gaz carbonique où une enzyme cytoplasmique
+phospho-énolpyruvate carboxylase catalyse une réaction avec comme
+accepteur de $\text{CO}_2$ le phosphoénolpyruvate (PEP)\,: $PEP +
+\text{CO}_2 \longrightarrow \text{Oxaloacétate}$. On parle de photo
+synthèse en $\text{C}_4$ puisqu'on aboutit à la formation de molécules
+à 4 atomes de carbone. À l’opposé de certaines graminées dites plantes
+en $\text{C}_3$ qui réalisent la fixation du carbone en $\text{C}_3$,
+la plante du sorgho dite plante en $\text{C}_4$, a un avantage
+compétitif dans ce sens où lorsqu’elle est soumise à la sécheresse, à
+la chaleur et à un faible taux d’azote ($N_2$) ou de dioxyde de
+carbone ($\text{CO}_2$) et lorsqu’elle est cultivée par exemple dans
+un environnement à 30\,\degree{}C, elle perd moins de molécules d’eau
+(les graminées en $\text{C}_3$ perdent environ 833 molécules d’eau par
+molécule de $\text{CO}_2$ fixée tandis que le sorgho en perd seulement
+277)\,\footnote{\url{https://books.google.fr/books?id=H7Wv9ZImW-QC}}. Ceci
+offre donc un avantage aux plantes en $\text{C}_4$ (sorgho) dans les
+environnements arides (zone sahélienne au Burkina Faso)
 \footnote{\url{https://books.google.fr/books?id=H7Wv9ZImW-QC}}. Des
  précipitations de 500 à 800 mm également réparties pendant la saison
  de production conviennent généralement aux cultivars qui mûrissent
@@ -294,13 +305,15 @@ arides (zone sahélienne au Burkina Faso)
 Le sorgho est bien adapté aux vertisols lourds. En pédologie un
 vertisol est un sol riche en argile du type 2/1 c’est-à-dire contenant
 une couche d’oxyde d’aluminium enserrée par deux couches de tétraèdres
-de silice\footnote{https://fr.wikipedia.org/wiki/Vertisol} que l’on
-trouve couramment dans les tropiques, où sa tolérance à l’asphyxie
-racinaire est souvent nécessaire, mais les sols sableux légers lui
-conviennent tout autant. C’est toutefois sur les limons et les limons
-sableux que sa culture réussit le mieux. La fourchette de pH du sol
-supportée par le sorgho est de 5.0 à 8.5, et il tolère davantage la
-salinité que le maïs (6 à 7.5)\footnote{\url{http://www.bioactualites.ch/fileadmin/documents/bafr/production-vegetale/grandes-cultures/4.5.11-73_Mais.pdf}}. Il
+de
+silice\footnote{\url{https://www.memoireonline.com/06/12/5956/Analyse-des-determinants-de-la-faible-productivite-du-mas-a-Agadjaligbo-dans-la-commune-de-Zogbo.html}}
+que l’on trouve couramment dans les tropiques, où sa tolérance à
+l’asphyxie racinaire est souvent nécessaire, mais les sols sableux
+légers lui conviennent tout autant. C’est toutefois sur les limons et
+les limons sableux que sa culture réussit le mieux. La fourchette de
+pH du sol supportée par le sorgho est de 5.0 à 8.5, et il tolère
+davantage la salinité que le maïs (6 à
+7.5)\footnote{\url{http://www.bioactualites.ch/fileadmin/documents/bafr/production-vegetale/grandes-cultures/4.5.11-73_Mais.pdf}}. Il
 est adapté aux sols pauvres et peut produire du grain sur des sols où
 beaucoup d’autres cultures échoueraients\,\cite{BARRO_KONDOMBO_2010}.
  
@@ -321,15 +334,15 @@ moyenne environ 6\%\,\cite{Ellstrand_1983,
 la fois par autopollinisation et par pollinisation croisée, la plupart
 des races locales de sorgho cultivées par les agriculteurs de
 subsistance sont constituées de mélanges de lignées pures et de
-lignées partiellement pures\,\cite{SINGH_1997} (Singh et al, 1997). Le
-degré d’allogamie varie notamment en fonction du type de panicule du
-cultivar; généralement, la pollinisation croisée est plus élevée dans
-le cas des sorghos herbeux à panicule lâche que dans celui des sorghos
-cultivés à panicule compacte. Selon certaines estimations, le taux
-d’allogamie chez le sorgho cultivé en plein champ varie de 5 à plus de
-40\%\,\cite{Barnaud_2008, DJE_2004, Doggett_1988, Ellstrand_1983,
-  Schmidt_2006}. Plusieurs espèces de pollinisateurs ont été observées
-consécutivement visitant des fleurs de sorgho
+lignées partiellement pures\,\cite{SINGH_1997}. Le degré d’allogamie
+varie notamment en fonction du type de panicule du cultivar;
+généralement, la pollinisation croisée est plus élevée dans le cas des
+sorghos herbeux à panicule lâche que dans celui des sorghos cultivés à
+panicule compacte. Selon certaines estimations, le taux d’allogamie
+chez le sorgho cultivé en plein champ varie de 5 à plus de
+40\%\,\cite{Barnaud_2008, DJE_2004, Doggett_1988,
+  Ellstrand_1983,Schmidt_2006}. Plusieurs espèces de pollinisateurs
+ont été observées consécutivement visitant des fleurs de sorgho
 cultivé\,\cite{Immelman_2000, Schmidt_2006}. Lors de la collecte des
 insectes, des grains de pollen de sorgho ont été trouvés sur chacun de
 ceux-ci. Cependant, il n’a pas été déterminé si le déplacement des
@@ -337,8 +350,8 @@ insectes occasionnait une pollinisation croisée. D’autres études
 doivent être réalisées pour déterminer l’importance de la
 pollinisation par les insectes chez le \emph{S. bicolor}. La floraison
 et la pollinisation du \emph{S.bicolor} sont décrites
-dans\,\citeauthor{House85} House\,\citeyear{House85}, Singh et
-al.\citeauthor{SINGH_1997} \,\citeyear{SINGH_1997} et
+dans\,\citeauthor{House85}\,\citeyear{House85},
+\citeauthor{SINGH_1997} \,\citeyear{SINGH_1997} et
 \citeauthor{SRINIVASA_2013}\,\citeyear{SRINIVASA_2013}. L’inflorescence
 commence à se former 30 à 40 jours après la germination. Le sorgho
 cultivé fleurit généralement 55 à 70 jours après la germination en
@@ -453,7 +466,7 @@ En novembre 2016, l’USDA (Unitites States Department of Agriculture) a résum�
     \begin{tabular}{|c|p{4.5cm}|c|p{4.5cm}|c|p{4.5cm}|c|p{4.5cm}|}
       \hline
       \multirow{3}{*}{Localisation} & \textbf{Superficies}      & \textbf{Rendements}  & \textbf{Production}          \\ \cline{2-3}
-      & millions ha                 & T/ha                 & millions de tonnes          \\ \cline{2-3}
+      & Millions ha                & T/ha                 & millions de tonnes          \\ \cline{2-3}
       & 2015/16\,(p.) 2016/17\,(est.) & 2015/16\,(p.)  2016/17\,(est.) & 2015/16\,(p.) 2016/17\,(est.)        \\ \hline
       \multirow{1}{*}{\textbf{Monde}} & 42.54  \, 42.49 & 1.41  \, 1.51 & 60.16 \, 64.20 \\ \hline
       \multirow{1}{*}{Afrique} & 24.09 \, 24.41 & 1.35 \, 1.49 & 19.39 \, 23.9 \\ \hline
@@ -484,7 +497,7 @@ En novembre 2016, l’USDA (Unitites States Department of Agriculture) a résum�
   %  \begin{tabular}{|c|p{4.5cm}|c|p{4.5cm}|c|p{4.5cm}|c|p{4.5cm}|}
    %   \hline
     %  \multirow{3}{*}{Localisation} & \textbf{Superficies}      & \textbf{Rendements}  & \textbf{Production}          \\ \cline{2-3}
-     % & millions ha                 & T/ha                 & millions de tonnes          \\ \cline{2-3}
+     % & multicolumn{2}{*}{millions ha}                 & T/ha                 & millions de tonnes          \\ \cline{2-3}
       %& 2015/16\,(p.) 2016/17\,(est.) & 2015/16\,(p.)  2016/17\,(est.) & 2015/16\,(p.) 2016/17\,(est.)        \\ \hline
       %\multirow{1}{*}{\textbf{Monde}} & 42.54  \, 42.49 & 1.41  \, 1.51 & 60.16 \, 64.20 \\ \hline
       %\multirow{1}{*}{Afrique} & 24.09 \, 24.41 & 1.35 \, 1.49 & 19.39 \, 23.9 \\ \hline
@@ -528,49 +541,52 @@ En novembre 2016, l’USDA (Unitites States Department of Agriculture) a résum�
 
 Le niébé,\emph{V. unguiculata} est une légumineuse annuelle dont le
 centre d’origine était incertain avant les études de
-Faris\,\cite{FARIS_1963,FARIS_1965}. Piper (1913), a donné une double
-origine au niébé: l’Inde et l’Afrique\,\cite{Piper_1913}. Faris (1963,
-1965), après des études qui se sont reposées sur une description
-cytologique et morphologique des formes sauvages et cultivées du niébé
-montre que l’Afrique de l’Ouest et plus probablement le Nigeria est le
-centre d’origine du niébé. Sa diffusion vers l’Asie, en parallèle avec
-celle du sorgho, date de 2\,300 av J-C. Le niébé est introduit en
-Europe vers 300 av J-C où il reste une culture mineure dans la partie
-méridionale. Les Espagnols et les Portugais l’exportent au XVII\ieme{}
-siècle vers le nouveau monde. D’autres cultivars sont transportés
-directement de l’Afrique vers l’Amérique latine avec le trafic des
-esclaves. Le niébé atteint le Sud des États-Unis au début du
-XIX\ieme{} siècle\,\cite{Sawadogo_2009}.
+Faris\,\cite{FARIS_1963,FARIS_1965}. \citeauthor{Piper_1913}\,\citeyear{Piper_1913},
+a donné une double origine au niébé: l’Inde et
+l’Afrique.\cite{FARIS_1963,FARIS_1965} après des études qui
+se sont reposées sur une description cytologique et morphologique des
+formes sauvages et cultivées du niébé montre que l’Afrique de l’Ouest
+et plus probablement le Nigeria est le centre d’origine du niébé. Sa
+diffusion vers l’Asie, en parallèle avec celle du sorgho, date de
+2\,300 av J-C. Le niébé est introduit en Europe vers 300 av J-C où il
+reste une culture mineure dans la partie méridionale. Les Espagnols et
+les Portugais l’exportent au XVII\ieme{} siècle vers le nouveau
+monde. D’autres cultivars sont transportés directement de l’Afrique
+vers l’Amérique latine avec le trafic des esclaves. Le niébé atteint
+le Sud des États-Unis au début du XIX\ieme{}
+siècle\,\cite{Sawadogo_2009}.
 
 \subsection{Taxonomie}
 
 Le niébé a été décrit par Linné, à partir d’une forme cultivée
 provenant des Antilles, sous le nom de Dolichos unguiculatus, qui
-deviendra Vigna unguiculta\,\cite{Pasquet_1997}. Vigna
-unguiculta inclut des formes cultivées et des formes sauvages. Les
-formes cultivées se distinguent des formes sauvages par des gousses
+deviendra Vigna unguiculta\,\cite{Pasquet_1997}. Vigna unguiculta
+inclut des formes cultivées et des formes sauvages. Les formes
+cultivées se distinguent des formes sauvages par des gousses
 indéhiscentes, des graines et des gousses de taille plus importante
-\,\cite{Lush_1981}. Selon Vanderborght et Baudoin (2001), les
-formes cultivées sont regroupées dans la sous-espèce unguiculta,
+\,\cite{Lush_1981}. Selon\,\citeauthor{Vanderborght_2001}\,\citeyear{Vanderborght_2001},
+les formes cultivées sont regroupées dans la sous-espèce unguiculta,
 laquelle est subdivisée en quatre cultigroupes: le cultigroupe
-Unguiculta (anciennement \emph{ V. sinensis (L.) Savi ex Hassk.}), forme
-couramment cultivée et plus importante en Afrique; le cultigroupe
-Biflora (anciennement V. unguiculata subsp. Cylindrica (L.) Verdcourt),
-à petites gousses érigées, cultivé principalement en Asie; le
-cultigroupe Sesquipedalis (anciennement \emph{V.unguiculata
-var. Sesquipedalis (L.) Ohashi}), à gousses très longues et pendantes;
-le cultigroupe Texfilis avec de long pédoncule est présent en Afrique de l’Ouest. Le
-niébé est une dicotylédone de l’ordre des Fabales,de la famille des Fabaceae,
-de la sous famille Faboideae,de la tribu Phaseoleae,de la sous tribu des Phaseolinae,
-du genre Vigna\,\cite{Verdcourt_1970,Maréchal_1978} (Verdcourt, (1970); Maréchal et al. (1978)).
+Unguiculta (anciennement \emph{ V. sinensis (L.) Savi ex Hassk.}),
+forme couramment cultivée et plus importante en Afrique; le
+cultigroupe Biflora (anciennement V. unguiculata subsp. Cylindrica
+(L.) Verdcourt), à petites gousses érigées, cultivé principalement en
+Asie; le cultigroupe Sesquipedalis (anciennement \emph{V.unguiculata
+  var. Sesquipedalis (L.) Ohashi}), à gousses très longues et
+pendantes; le cultigroupe Texfilis avec de long pédoncule est présent
+en Afrique de l’Ouest. Le niébé est une dicotylédone de l’ordre des
+Fabales,de la famille des Fabaceae, de la sous famille Faboideae,de la
+tribu Phaseoleae,de la sous tribu des Phaseolinae, du genre
+Vigna\,\cite{Verdcourt_1970, Marechal_1978}.
 
 \subsection{Écologie}
 
 \subsubsection{Photosensibilité}
 
-Ce caractère a été largement étudié, en particulier par Steele
-(1972). On distingue trois groupes, \textbf{le premier groupe},
-photo-indépendant tardif, comprend des génotypes indifférents à la
+Ce caractère a été largement étudié, en particulier
+par\,\citeauthor{Steele_1972}\,\citeyear{Steele_1972}. On distingue
+trois groupes, \textbf{le premier groupe}, photo-indépendant tardif,
+comprend des génotypes indifférents à la
 photopériode\,\footnote{\url{https://www.doc-developpement-durable.org/file/Culture-plantes-alimentaires/FICHES_PLANTES/niebe/Cowpea_niébé_culture_french.pdf}}. La
 croissance est indéterminée et le port quelquefois érigé mais le plus
 souvent volubile. Ces génotypes sont généralement tardifs et ont une
@@ -584,13 +600,13 @@ indifférents à la photopériode. Ces génotypes fleurissent précocement
 production groupée, souvent récoltable au bout de deux mois. Ces
 variétés sont cultivées dans les zones de latitude élevée, en Inde,
 dans le bassin méditerranéen et aux États-Unis. \textbf{Le troisième
-groupe}, photosensible, regroupe des génotypes sensibles à la
+  groupe}, photosensible, regroupe des génotypes sensibles à la
 photopériode\,\cite{Steele_1972}. Le port est généralement rampant et
 nettement moins volubile que chez les cultivars du premier groupe. Ce
-groupe englobe la plupart des cultivars traditionnelsde la région
+groupe englobe la plupart des cultivars traditionnels de la région
 soudano-sahélienne cultivés en association avec le sorgho et le
 mil\,\cite{Doggett_1988}. Il est à noter que les deux derniers groupes
-photo-indépendant précoce et photosensible sont assez
+photo-indépendants précoce et photosensible sont assez
 proches. Cultivés en jours très courts, ils sont indiscernables et les
 cultivars photosensibles présentent alors un port érigé et fleurissent
 dès les premiers nœuds. En revanche, les deux premiers groupes
@@ -601,7 +617,8 @@ différents. De plus, le groupe photo-indépendant précoce et le groupe
 photosensible ont relativement peu d’ovules par rapport au groupe
 photo-indépendant tardif. Ainsi, ce n’est pas le photopériodisme qui
 permet de séparer les cultivars de niébé en deux grands groupes
-physiologiques comme le supposait Steele (1972), mais l’aptitude à
+physiologiques comme le supposait
+\,\citeauthor{Steele_1972}\,\citeyear{Steele_1972}, mais l’aptitude à
 fleurir rapidement dès les premiers nœuds de la tige principale dans
 des conditions très inductives de jours
 courts\footnote{\url{https://www.doc-developpement-durable.org/file/Culture-plantes-alimentaires/FICHES_PLANTES/niebe/Cowpea_niébé_culture_french.pdf}}.
@@ -612,8 +629,8 @@ courts\footnote{\url{https://www.doc-developpement-durable.org/file/Culture-plan
 sableux à argileux. Il ne supporte pas l’engorgement et l’acidité du
 sol\,\cite{Doggett_1988}. Le niébé croît bien à des pH de 4,5 à 9,0 et
 réussit à fixer l’azote dans des sols possédants moins de 2\% de
-matière organique et plus de 80\% de sable (Singh et al,
-1997). \textbf{Conditions thermiques} Le niébé est
+matière organique et plus de 80\% de
+sable\,\cite{SINGH_1997}. \textbf{Conditions thermiques} Le niébé est
 une culture très bien adaptée aux régions arides et semi-arides. C’est
 une légumineuse cultivée dans les régions tropicales et
 subtropicales\,\cite{Doggett_1988}. \textbf{Conditions hydriques} Le
@@ -641,14 +658,14 @@ de bactéries fixatrices d’azote atmosphérique\,\cite{Doggett_1988}.
 
 \paragraph{L’appareil reproducteur:}
 
-\textbf{L’inflorescence} elle est un racème axillaire. Le pédoncule a
+\textbf{L’inflorescence} est un racème axillaire. Le pédoncule a
 une longueur variable, au bout duquel se trouve le rachis. La
 coloration des fleurs varie du blanc au violet en fonction de la
 concentration d’anthocyanine. Le niébé est une plante
 autogame\,\cite{Fery}. Le cycle des variétés est déterminé au stade
-50\% de floraison (Drabo, 1981). \textbf{Les fruits} le fruit du niébé
+50\% de floraison\,\cite{Drabo_1981}. \textbf{Les fruits} le fruit du niébé
 est une gousse pendante ou dressée avec des formes linéaire, spiralée,
-ou enroulée. La gousse peut être entièrement pourpre, pigmentée sur
+ou enroulée. \textbf{La gousse} peut être entièrement pourpre, pigmentée sur
 les valves à son extrémité, marbrée ou dépourvue de
 pigments. \textbf{Les graines} la graine du niébé comporte un tégument
 qui peut être ridé ou lisse. Elle est de couleur, de taille, et de
@@ -668,17 +685,18 @@ carbohydrates\,\cite{Doggett_1988}.
 Le terme niébé est un mot wolof désignant une plante légumineuse,
 \emph{Vigna unguiculata (L.) Walp}. Herbacée africaine, sa culture
 présente des retombées économiques, nutritionnelles et agronomiques
-considérables entre autre dans de nombreux pays d'Afrique de l'Ouest
-y compris les pays sahéliens tels que Burkina Faso (les zones
+considérables entre autre dans de nombreux pays d'Afrique de l'Ouest y
+compris les pays sahéliens tels que Burkina Faso (les zones
 centre-nord et nord qui sont de fortes productrices de niébé).  Le
 niébé est une source de devises pour les pays producteurs. Les graines
 du niébé alimentent les échanges économiques au niveau régional et
-sous régional. Selon Langyintuo et al, (2003) le Niger, le Burkina
-Faso, le Bénin, le Mali, le Cameroun, le Tchad, et le Sénégal sont les
-principaux pays exportateurs du niébé; tandis que le Nigeria, le
-Ghana, le Togo, la Côte d’ivoire, le Gabon, et la Mauritanie sont les
-pays importateurs. En plus du commerce des graines du niébé, le
-fourrage est aussi commercialisé et utilisé dans l’alimentation des
+sous régional. Selon \citeauthor{Langyintuo_2003},
+\,\citeyear{Langyintuo_2003}\,le Niger, le Burkina Faso, le Bénin, le
+Mali, le Cameroun, le Tchad, et le Sénégal sont les principaux pays
+exportateurs du niébé; tandis que le Nigeria, le Ghana, le Togo, la
+Côte d’ivoire, le Gabon, et la Mauritanie sont les pays
+importateurs. En plus du commerce des graines du niébé, le fourrage
+est aussi commercialisé et utilisé dans l’alimentation des
 animaux\,\cite{Langyintuo_2003}. En Afrique occidentale et centrale,
 le commerce du fourrage du niébé permet une augmentation de 25\,\% du
 revenu annuel des paysans\,\cite{Quin_1997}. Sur le plan nutritionnel:
@@ -696,7 +714,7 @@ domestiques\,\cite{BAMBARA_2008}. La graine du niébé est riche en
 lysine mais déficiente en acide aminé soufré. Sur le plan agronomique:
 la culture du niébé permet un enrichissement du sol en azote par
 l’intermédiaire de bactéries fixatrices d’azote atmosphérique
-(rhizobium). Quin (1997), montre qu’un hectare de niébé fixe 40 à 80
+(rhizobium). \citeauthor{Quin_1997}\citeyear{Quin_1997}, montre qu’un hectare de niébé fixe 40 à 80
 Kg d’azote nitrés dans le sol. De par sa croissance rapide, le niébé
 assure une couverture du sol,le protégeant ainsi contre l’érosion et
 contre l’envahissement des adventices\,\cite{Sawadogo_2009}.
@@ -720,12 +738,12 @@ permanent et la réserve en eau utile
 
 %  %inserer une image
 
-%\begin{figure}%
- % \begin{center}
-  % \includegraphics[width=12cm]{images/CartepedologiqueBF}
-  %\end{center}
-  %\caption{Carte des sols du Burkina Faso\,(Haute Volta)\protect\footnote{\protect\url{https://esdac.jrc.ec.europa.eu/ESDB_Archive/EuDASM/Africa/maps/afr_cpr_ha(es).htm}}.}
-%\end{figure}
+\begin{figure}%
+ \begin{center}
+   \includegraphics[width=12cm]{images/cartepedobf}
+  \end{center}
+  \caption{Carte des sols du Burkina Faso\,(Haute Volta)\protect\footnote{\protect\url{https://esdac.jrc.ec.europa.eu/ESDB_Archive/EuDASM/Africa/maps/afr_cpr_ha(es).htm}}.}
+\end{figure}
 
 
 
@@ -734,11 +752,11 @@ recherche et organismes de développement. En 1969, l'Institut de
 Recherche Scientifique pour le Développement en Coopération (ORSTOM)
 avait réalisé une première couverture du territoire et dressé une
 carte pédologique qui constitue toujours aujourd'hui la base de la
-plupart des études pédologiques menées dans le pays\,\cite{BUNASOLS_2008}.
+plupart des études pédologiques menées dans le pays\,\cite{BUNASOLS_2004}.
 Les pédologues ont classé l'ensemble des sols du pays
 en huit groupes principaux, qui a été proposé par le Bureau National
 des Sols (Bunasols) en 1985 sur la base d'autres études antérieures
-%\,\cite{PERON_1975}. De façon générale, les sols du Burkina ont un
+\,\cite{PERON_1975}. De façon générale, les sols du Burkina ont un
 faible niveau de teneur en éléments fertilisants, notamment en
 phosphore et en azote. Leur profondeur est généralement limitée par une
 cuirasse qui affleure même en surface en certains endroits. Le niveau
@@ -746,7 +764,7 @@ de la réserve en eau varie avec la toposéquence. Généralement faible
 en haut de pente (inférieure à 60 mm/mètre de sol), la réserve utile
 peut dépasser 150 mm/mètre dans les sols alluvionnaires le long des
 cours d'eau. C'est le cas par exemple des sols de la plaine irriguée
-%du Sourou\,\cite{SOMENICOU_1983}. Ces sols subissent de façon très accrue
+du Sourou\,\cite{SOMENICOU_1983}. Ces sols subissent de façon très accrue
 le ruissellement et l'érosion hydrique\,\cite{Roose_2004}
 \footnote{\url{http://hydrologie.org/redbooks/a199/iahs_199_0217.pdf}}. Les
 8 principaux types de sols définis grâce aux travaux de l'ORSTOM au
@@ -818,9 +836,9 @@ soumis à d’énormes contraintes climatiques (érosions hydrique et
 dégradation et ne supportent pas, de façon soutenue, les systèmes et
 modes de production agricole actuellement
 pratiqués\,\cite{PANA_2003}. A titre d’illustration, une étude de
-l’INERA (2003) montre que la dégradation affecte de nos jours plus de
+\,\citeauthor{INERA_2003} montre que la dégradation affecte de nos jours plus de
 24\,\% des terres arables au Burkina\,\cite{INERA_2003}, ce qui est
-préjudiciable à l’économie nationale. Une autre plus récente estime
+préjudiciable à l’économie nationale. Une autre étude plus récente estime
 également qu’environ 11\,\% des terres du pays sont considérées comme
 très dégradées et 34\,\%, comme moyennement dégradées\,\cite{SPCONEDD_2006}.
 Les sols du Burkina Faso sont naturellement pauvres en
@@ -835,7 +853,7 @@ populations restent la réduction significative de la couverture
 végétale avec une crise du
 bois\footnote{https://www6.inra.fr/fabatropimed/FTM-Publications/FTM-Master-BTS}.
 Au Burkina Faso, étant donné que moins de 10\,\% de la population a
-accès à d’autres sources d’énergie que le bois de feu, près de 250 000
+accès à d’autres sources d’énergie que le bois de feu, près de 250\,000
 hectares de forêts sont défrichés annuellement pour satisfaire les
 besoins en bois de chauffe et 75\,000 hectares supplémentaires sont
 convertis en nouveaux champs. Cette tendance est toujours à
@@ -879,41 +897,41 @@ associations d’espèces résident dans le gain de rendement global par
 rapport à des cultures pures (mono spécifiques) et dans l’amélioration
 significative et quasi systématique de la teneur en protéines de la
 céréale, ceci quelle que soit sa proportion dans le mélange récolté
-\,\cite{Jensen_1996}. Les associations légumineuse-céréale permettent aussi
-une meilleure valorisation des ressources du milieu comparativement
-aux cultures mono-spécifiques correspondantes dans les systèmes à bas
-niveaux d’intrants azotés\,\cite{Bedoussac_2010}. Les
+\,\cite{Jensen_1996}. Les associations légumineuse-céréale permettent
+aussi une meilleure valorisation des ressources du milieu
+comparativement aux cultures mono-spécifiques correspondantes dans les
+systèmes à bas niveaux d’intrants azotés\,\cite{Bedoussac_2010}. Les
 associations sont également un moyen de réduire, dans certaines
 situations, la pression des adventices, maladies et ravageurs
-\,\cite{Altieri_1999}, souvent considérés comme des facteurs déterminants de
-la production agricole, faisant ainsi des associations une alternative
-positive à la lutte chimique\,\cite{Hauggaard_2001}. Les
-mélanges d’espèces présentent aussi d’autres avantages comme : i) la
-réduction de l’érosion des sols par une meilleure couverture et
-enracinement\,\cite{Zougmoré_1998}; ii) l’amélioration de la
-résistance à la verse qui est un accident de végétation atteignant
-principalement les céréales, provoqué par la pluie, le vent ou une
-attaque de parasites et couchant les tiges au sol\,\cite{Anil_1998};
-iii) la réduction des risques de lixiviation qui traduit la perte de
-nutriments (nitrates) végétaux hydrosolubles du sol, qui sont dissous
-et entraînés par les eaux de pluie ou d’irrigation\,\cite{CorreHellou_2005}
-ou encore, iv) la meilleure stabilité interannuelle des rendements
-\,\cite{Lithourgidis_2006}. En outre, Chu et al ont aussi
-montré que le système de culture intercalaire est très prometteur pour
-le développement de la production alimentaire durable dans les
-conditions de ressources naturelles limitées, et en particulier dans
-les situations de ressources limitées en eau\,\cite{Tsubo_2005}. Dans
-le cas spécifique d’association du niébé avec le sorgho, la plante du
-sorgho aide celle du niébé à se développer. De ce fait, celles-ci
-pourraient présenter un intérêt aussi bien en agriculture biologique
-qu’en agriculture conventionnelle pour: i) améliorer la qualité des
-composantes; ii) réduire les intrants chimiques; iii) et améliorer les
-performances économiques et environnementales des systèmes de
-production\,\cite{Koulibi_FideleZONGO}. Dans le cas spécifique
-d'association du niébé avec le sorgho, la plante du sorgho aide celle
-du niébé à se développer.
+\,\cite{Altieri_1999}, souvent considérés comme des facteurs
+déterminants de la production agricole, faisant ainsi des associations
+une alternative positive à la lutte
+chimique\,\cite{Hauggaard_2001}. Les mélanges d’espèces présentent
+aussi d’autres avantages comme : i) la réduction de l’érosion des sols
+par une meilleure couverture et enracinement\,\cite{Zougmore_1998};
+ii) l’amélioration de la résistance à la verse qui est un accident de
+végétation atteignant principalement les céréales, provoqué par la
+pluie, le vent ou une attaque de parasites et couchant les tiges au
+sol\,\cite{Anil_1998}; iii) la réduction des risques de lixiviation
+qui traduit la perte de nutriments (nitrates) végétaux hydrosolubles
+du sol, qui sont dissous et entraînés par les eaux de pluie ou
+d’irrigation\,\cite{CorreHellou_2005} ou encore, iv) la meilleure
+stabilité inter-annuelle des rendements \,\cite{Lithourgidis_2006}. En
+outre,\,\citeauthor{Chu_2004}\,\citeyear{Chu_2004} ont aussi montré
+que le système de culture intercalaire est très prometteur pour le
+développement de la production alimentaire durable dans les conditions
+de ressources naturelles limitées, et en particulier dans les
+situations de ressources limitées en eau\,\cite{Tsubo_2005}. Dans le
+cas spécifique d’association du niébé avec le sorgho, la plante du
+sorgho aide celle du niébé à se développer. De ce fait, les
+associations culturales pourraient présenter un intérêt aussi bien en
+agriculture biologique qu’en agriculture conventionnelle pour: i)
+améliorer la qualité des composantes; ii) réduire les intrants
+chimiques; iii) et améliorer les performances économiques et
+environnementales des systèmes de
+production\,\cite{Koulibi_FideleZONGO}.
 
-%%   %insérer image
+%%  %insérer image
 
 \begin{figure}%
   \begin{center}
@@ -947,9 +965,10 @@ la fixation symbiotique, les légumineuses améliorent le bilan de
 l'azote dans les systèmes de
 cultures\,\cite{Ndakidemi_2005,Fustec11}. Lors de la fixation d’azote
 atmosphérique, les légumineuses contribuent à la teneur en azote (N)
-du sol sous forme minérale (nitrée) soit en tant que cultures pures en
-rotation ou, en association
-\,\cite{Bado_2006,Chu_2004,Makoi_2009,Ndakidemi_2005}. En
+du sol sous forme organique ou
+minérale\,\footnote{\url{http://fertilisation-edu.fr/cycles-bio-geo-chimiques/le-cycle-de-l-azote-n.html}}
+(nitrée) soit en tant que cultures pures en rotation ou, en
+association \,\cite{Bado_2006,Chu_2004,Makoi_2009,Ndakidemi_2005}. En
 culture associée par exemple, les légumineuses peuvent augmenter la
 teneur en azote du sol grâce à la fixation et
 l’excrétion\,\cite{Trenbath_1976,Fustec11}. De ce fait, les plantes
@@ -961,11 +980,12 @@ céréale se fait par l’intermédiaire de la décomposition et de la
 minéralisation des racines des légumineuses et/ou des nodules
 \,\cite{Burity_1989} et par les exsudats racinaires libérés des
 légumineuses\,\cite{Ndakidemi_2005,Makoi_2009}. Ce processus est
-appelé rhizodéposition (Fustec et al, 2011) et constitue une source
+appelé rhizodéposition\cite{Fustec11} et constitue une source
 potentielle d’accumulation de l’azote dans le
 sol\,\cite{Koulibi_FideleZONGO}. Le niébé est une espèce généralement
 efficace dans la fixation de l’azote grâce aux rhizobiums associés à
-ses racines\footnote{\url{https://vtechworks.lib.vt.edu/bitstream/handle/10919/68409/4157_these_Traore_soil_fertility_2009.pdf?sequence=1}}.
+ses
+racines\footnote{\url{https://vtechworks.lib.vt.edu/bitstream/handle/10919/68409/4157_these_Traore_soil_fertility_2009.pdf?sequence=1}}.
 
 \newpage
 
