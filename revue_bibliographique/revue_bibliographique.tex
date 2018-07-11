@@ -10,6 +10,8 @@
 \usepackage{apacite}
 \usepackage{array}
 \usepackage{multirow}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{,}{,}{#1}}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 % \renewcommand{\thefootnote}{\Alph{footnote}}
@@ -114,8 +116,8 @@ pauvreté et assurer son développement économique
 
 Le sorgho est originaire de l'ancien monde et problablement de la
 partie nord-est de l'Afrique où la variabilité des sorghos cultivés et
-sauvages est maximale. \emph{ Sorghum bicolor (Linn.) Moench} passe
-généralement pour être l'appelation spécifique la plus juste des
+sauvages est maximale. \emph{Sorghum bicolor} (Linn.) Moench passe
+généralement pour être l'appelation spécifique la plus juste pour les
 sorghos cultivés \cite{food1977introduction}. Le sorgho commun
 \emph{Sorghum bicolor} est une graminée très répandue à l'état sauvage
 sous les climats tropicaux et subtropicaux. C'est une plante herbacée
@@ -125,47 +127,49 @@ ressemble un peu au maïs mais son système racinaire le rend résistant
 Afrique pour nourrir le bétail (sorgho fourrager) et pour
 l'alimentation humaine (sorgho grain). Toutefois, on le trouve aussi
 beaucoup en Inde et en Amérique du Sud, ce qui le classe au 5\ieme{}
-rang des céréales, après le maïs, le riz, le blé et l'orge. Selon les
-continents, il porte différents noms: \og{}gros mil\fg{} en Afrique,
-\og{}millet indien\fg{} en Asie,\og{}blé égyptien\fg{} au
+rang des céréales produites dans le monde, après le maïs, le riz, le
+blé et l'orge. Selon les continents, il porte différents noms :
+\og{}gros mil\fg{} en Afrique, \og{}millet indien\fg{} en Asie,
+\og{}blé égyptien\fg{} au
 Moyen-Orient\footnote{\url{https://jardinage.lemonde.fr/dossier-820-sorgho-sorghum-bicolor-cereale-sans-gluten.html}}. Depuis
 des siècles, les peuples d'Afrique et d'Asie utilisent ses graines
 pour leur alimentation. Aujourd'hui, le sorgho est cultivé sur tous
 les continents, sa domestication a vraisemblablement eu lieu il y a
-plusieurs millénaires en Afrique et au Sud-est du Sahara. On note en
-Afrique\,trois centres géographiques actifs dans la diversification du
-sorgho cultivé: le centre ouest-africain qui a contribué à
-l'établissement des sorghos de race guinea; le centre est-africain
-riche en sorgho des races caudatum et durra; le centre sud-africain à
+plusieurs millénaires en Afrique et au Sud-Est du Sahara. On note en
+Afrique trois centres géographiques actifs dans la diversification du
+sorgho cultivé : le centre ouest-africain qui a contribué à
+l'établissement des sorghos de race guinea ; le centre est-africain
+riche en sorgho des races caudatum et durra ; le centre sud-africain à
 l'origine des sorghos de race kafir. Dès le troisième millénaire avant
-J.-C., ces sorghos auraient gagné l'Asie: l'Inde et le Pakistan,
+J.-C., ces sorghos auraient gagné l'Asie : l'Inde et le Pakistan,
 3\,000 ans avant J.-C., puis la Chine, un millénaire plus
 tard. L'arrivée du sorgho en Europe se situerait vers 2\,000 ans avant
 J.-C. Transporté en Amérique à l'époque des grandes découvertes au
-XV\ieme{} siècle, le sorgho est véritablement diffusé qu'à partir du
-XIX\ieme{} siècle, notamment aux
+\textsc{XV}\ieme{} siècle, le sorgho n'est véritablement diffusé qu'à
+partir du \textsc{XIX}\ieme{} siècle, notamment aux
 États-Unis\footnote{\url{https://www.gnis-pedagogie.org/sorgho-intro-caracteristiques-plante.html}}.
 
 \subsection{Taxonomie}
 
 Le sorgho, \emph{Sorghum bicolor (L.) Moench}, est une herbacée
-annuelle de la famille des Poacées (ex-Graminées),de la sous famille
+annuelle de la famille des Poacées (ex-Graminées), de la sous famille
 des Panicoïdeae, de la tribu des Andropogoneae et du genre
-\emph{Sorghum} \cite{Doggett_1988}.  C'est une espèce monoïque
+\emph{Sorghum} \cite{Doggett_1988}. C'est une espèce monoïque
 préférentiellement autogame. Le taux d'allogamie varie selon la race
-considérée: très faible pour les variétés cléistogames qui subissent
-une autopollinisation automatique et ainsi leurs fleurs ne s'ouvrent
-qu'après l'anthèse (période terminale\,du développement de la fleur
+considérée : très faible pour les variétés cléistogames qui subissent
+une autopollinisation automatique et dont les fleurs ne s'ouvrent
+qu'après l'anthèse (période terminale du développement de la fleur
 depuis son épanouissement jusqu'au flétrissement). Ce taux
 d'autopollinisation est de l'ordre de 5 à 7\,\% pour les variétés à
 panicules compactes \cite{Doggett_1988}, et varie largement (20 à
 29\,\%) pour les variétés à panicules lâches de la race botanique
-Guinea \cite{Ollitrault_1987,Chantereau_1994}. De manière schématique,
-la plante du sorgho se présente comme suit:
+Guinea \cite{Ollitrault_1987,Chantereau_1994}. En champ réel les
+plants de sorgho se présentent ainsi (voir
+Fig.~\ref{fig-SchemaComposePage5}
+p.~\pageref{fig-SchemaComposePage5}).
 
-
-
-\begin{figure}%
+%% Figure 1 : schéma et représentation en champ réel d'un plant de sorgho
+\begin{figure}
   \begin{center}
     \includegraphics[width=16cm]{images/SchemaComposePage5}
   \end{center}
@@ -173,18 +177,11 @@ la plante du sorgho se présente comme suit:
   \label{fig-SchemaComposePage5}
 \end{figure}
 
-En champ réel les plants de sorgho se présentent ainsi (voir
-Fig.~\ref{fig-SchemaComposePage5}
-p.~\pageref{fig-SchemaComposePage5}).
-
-
 Par ailleurs, \citeA[p.~18]{Chantereau_2013}, résument les différentes
 races du sorgho et leurs caractéristiques d'identification
 (Tableau~\ref{tableau:Chantereau_2013}).
-% \footnote{Google books}:
 
-
-%%   % insérer un tableau
+%% Tableau 1 : Principaux caractères identitaires des races du sorgho.
 \begin{table}
   \begin{footnotesize}
     \begin{center}
@@ -202,32 +199,25 @@ races du sorgho et leurs caractéristiques d'identification
   \end{footnotesize}
 \end{table}
 
-
-
-\newpage
-
-%% Tableau 1: Principaux caractères identitaires des races du sorgho.
-
-
-L'inflorescence est une panicule de forme variable. Le grain est\,un
+L'inflorescence est une panicule de forme variable. Le grain est un
 caryopse de couleur variable (blanche, rouge, brune et jaune), qui, à
 maturité, est plus ou moins dégagé des glumes
 \cite{SaintClair_1989,Chantereau_1991}. Tout comme le maïs et la canne
 à sucre, le sorgho appartient à la tribu des Andropogoneae. Les
 Andropogoneae sont en effet, une tribu de plantes monocotylédones de
-la famille des Poaceae et de la sous-famille des Panicoïdeae.
+la famille des Poaceae et de la sous-famille des Panicoïdeae. La
+figure~\ref{fig:phylogenie_poacees}
+p.~\pageref{fig:phylogenie_poacees} illustre la classification
+(cladogramme) phylogénétique des Poaceae dont fait partie le sorgho
+\cite{Paquet_2005}.
 
-La figure 2 illustre la classification (cladogramme) phylogénétique
-des Poaceae dont fait partie le sorgho \cite{Paquet_2005}.
-
-%%% insérer une image
-
-
+%% Figure 2 : phylogénie des poacées
 \begin{figure}%
   \begin{center}
     \includegraphics[width=10cm]{images/PoaceaePhylogeny}
   \end{center}
   \caption{Classification phylogénétique des Poacées \protect\cite{Paquet_2005}.}
+  \label{fig:phylogenie_poacees}
 \end{figure}
 
 
@@ -263,39 +253,40 @@ dégâts \cite{BARRO_KONDOMBO_2010}.
 
 \paragraph{Conditions hydriques} Le sorgho est une plante des milieux
 tropicaux chauds et semi-arides qui sont trop secs pour les maïs
-modernes, mais il existe aussi des maïs de zones sèches. Il est
+modernes en général (il existe des maïs de zones sèches). Il est
 particulièrement adapté à la sécheresse en raison d'un ensemble de
 caractéristiques morphologiques et physiologiques, notamment un
 système racinaire étendu, la pruine de ses feuilles qui limite ses
-pertes en eau (figure~1), et une aptitude à interrompre sa croissance
-pendant les périodes de sécheresse et à la reprendre une fois le
-stress disparu. Le sorgho est une plante monocotylédone de la tribu
-des Andropogoneae.Toutes les espèces de cette tribu présentent une
-photosynthèse en $\text{C}_4$. La photosynthèse en $\text{C}_4$ se
+pertes en eau (fig.~\ref{fig-SchemaComposePage5}
+p.~\pageref{fig-SchemaComposePage5}), et une aptitude à interrompre sa
+croissance pendant les périodes de sécheresse et à la reprendre une
+fois le stress disparu. Le sorgho est une plante monocotylédone de la
+tribu des Andropogoneae. qToutes les espèces de cette tribu présentent
+une photosynthèse en $\text{C}_4$. La photosynthèse en $\text{C}_4$ se
 réalise chez de nombreuses graminées tropicales à savoir le maïs, la
-canne à sucre, le mil,le sorgho poussant dans des conditions
+canne à sucre, le mil, le sorgho poussant dans des conditions
 désertiques ou sur des sols salés. Elle se traduit par un type de
 fixation du gaz carbonique où une enzyme cytoplasmique
 phospho-énolpyruvate carboxylase catalyse une réaction avec comme
-accepteur de $\text{CO}_2$ le phosphoénolpyruvate (PEP)\,:
+accepteur de $\text{CO}_2$ le phosphoénolpyruvate (PEP) :
 $PEP + \text{CO}_2 \longrightarrow \text{Oxaloacétate}$. On parle de
-photosynthèse en $\text{C}_4$ puisqu'on aboutit à la formation de
-molécules à 4 atomes de carbone. À l'opposé de certaines graminées
-dites plantes en $\text{C}_3$ qui réalisent la fixation du carbone en
-$\text{C}_3$, la plante du sorgho dite plante en $\text{C}_4$, a un
-avantage compétitif dans ce sens où lorsqu'elle est soumise à la
-sécheresse, à la chaleur et à un faible taux d'azote ($N_2$) ou de
-dioxyde de carbone ($\text{CO}_2$) et lorsqu'elle est cultivée par
-exemple dans un environnement à 30\,\degree{}C, elle perd moins de
-molécules d'eau (les graminées en $\text{C}_3$ perdent environ 833
-molécules d'eau par molécule de $\text{CO}_2$ fixée tandis que le
-sorgho en perd seulement 277) \cite{sage1998c4}. Ceci offre donc un
-avantage aux plantes en $\text{C}_4$ (sorgho) dans les environnements
-arides (zone sahélienne au Burkina Faso) \cite{sage1998c4}. Des
-précipitations de 500 à 800 mm également réparties pendant la saison
-de production conviennent généralement aux cultivars qui mûrissent en
-3 à 4 mois. Le sorgho tolère un certain niveau d'asphyxie racinaire et
-on peut le faire pousser dans des zones à fortes précipitations
+photosynthèse en $\text{C}_4$ puisque l'on aboutit à la formation de
+molécules à quatre atomes de carbone, contre trois pour les plantes en
+$\text{C}_3$ (certaines graminées). Le sorgho est une plante en
+$\text{C}_4$, ce qui lui donne un avantage compétitif lorsqu'elle est
+soumise à la sécheresse, à la chaleur et à un faible taux d'azote
+($\text{N}_2$) ou de dioxyde de carbone ($\text{CO}_2$). Par exemple,
+lorsqu'elle est cultivée dans un environnement chaud (30\,\degree{}C),
+elle perd moins de molécules d'eau : les graminées en $\text{C}_3$
+perdent environ 833 molécules d'eau par molécule de $\text{CO}_2$
+fixée tandis que le sorgho en perd seulement 277
+\cite{sage1998c4}. Ceci offre donc un avantage aux plantes en
+$\text{C}_4$ (sorgho) dans les environnements arides (zone sahélienne
+au Burkina Faso) \cite{sage1998c4}. Des précipitations de 500 à 800 mm
+également réparties pendant la saison de production conviennent
+généralement aux cultivars qui mûrissent en 3 à 4 mois. Le sorgho
+tolère un certain niveau d'asphyxie racinaire et on peut le faire
+pousser dans des zones à fortes précipitations
 \cite{BARRO_KONDOMBO_2010}.
 
 
@@ -321,40 +312,42 @@ beaucoup d'autres cultures échoueraient \cite{BARRO_KONDOMBO_2010}.
 talles issues du développement de bourgeons adventifs sur le collet du
 maître brin. La hauteur de la plante à maturité varie beaucoup (de
 50\,cm à plus de 5\,m). En fonction des cultivars et de leur
-situation, les feuilles (alternes, longues, retombantes, vert clair ou
-vert foncé) portées par les tiges varient en nombre (de quelques
-unités à plus de 30): figure 1 \cite{BARRO_KONDOMBO_2010}. Le
-\emph{S.bicolor} est principalement autogame, mais une pollinisation
-croisée par le vent peut se produire dans certaines conditions, à plus
-de 60\,\% selon le génotype, et en moyenne environ 6\,\%
-\cite{Ellstrand_1983, House85,Pedersen_1998,Schertz_1980}. Puisque
-l'espèce se reproduit à la fois par autopollinisation et par
-pollinisation croisée, la plupart des races locales de sorgho
-cultivées par les agriculteurs de subsistance sont constituées de
-mélanges de lignées pures et de lignées partiellement pures
-\cite{SINGH_1997}. Le degré d'allogamie varie notamment en fonction du
-type de panicule du cultivar; généralement, la pollinisation croisée
-est plus élevée dans le cas des sorghos herbeux à panicule lâche que
-dans celui des sorghos cultivés à panicule compacte. Selon certaines
-estimations, le taux d'allogamie chez le sorgho cultivé en plein champ
-varie de 5 à plus de 40\,\% \cite{Barnaud_2008, DJE_2004,
-  Doggett_1988, Ellstrand_1983,Schmidt_2006}. Plusieurs espèces de
-pollinisateurs ont été observées consécutivement visitant des fleurs
-de sorgho cultivé \cite{Immelman_2000, Schmidt_2006}. Lors de la
-collecte des insectes, des grains de pollen de sorgho ont été trouvés
-sur chacun de ceux-ci. Cependant, il n'a pas été déterminé si le
-déplacement des insectes occasionnait une pollinisation
-croisée. D'autres études doivent être réalisées pour déterminer
-l'importance de la pollinisation par les insectes chez le
-\emph{S. bicolor}. La floraison et la pollinisation du
-\emph{S.bicolor} sont décrites dans \citeauthor{House85}
-\citeyear{House85}, \citeauthor{SINGH_1997} \citeyear{SINGH_1997} et
-\citeauthor{SRINIVASA_2013} \citeyear{SRINIVASA_2013}. L'inflorescence
-commence à se former 30 à 40 jours après la germination. Le sorgho
-cultivé fleurit généralement 55 à 70 jours après la germination en
-climats chauds, mais, selon le génotype, la plante peut fleurir 30 à
-100 jours après la germination. Le temps humide et frais peut retarder
-la floraison. Les fleurs commencent à s'ouvrir deux jours après que
+situation, les feuilles ---\,alternes, longues, retombantes, vert
+clair ou vert foncé\,--- portées par les tiges varient en nombre, de
+quelques unités à plus de 30 (fig.~\ref{fig-SchemaComposePage5}
+p.~\pageref{fig-SchemaComposePage5}, \citeNP{BARRO_KONDOMBO_2010}). Le
+\emph{Sorghum bicolor} est principalement autogame, mais une
+pollinisation croisée par le vent peut se produire dans certaines
+conditions, à plus de 60\,\% selon le génotype, et en moyenne environ
+6\,\% \cite{Ellstrand_1983,
+  House85,Pedersen_1998,Schertz_1980}. Puisque l'espèce se reproduit à
+la fois par autopollinisation et par pollinisation croisée, la plupart
+des races locales de sorgho cultivées par les agriculteurs de
+subsistance sont constituées de mélanges de lignées pures et de
+lignées partiellement pures \cite{SINGH_1997}. Le degré d'allogamie
+varie notamment en fonction du type de panicule du cultivar ;
+généralement, la pollinisation croisée est plus élevée dans le cas des
+sorghos herbeux à panicule lâche que dans celui des sorghos cultivés à
+panicule compacte. Selon certaines estimations, le taux d'allogamie
+chez le sorgho cultivé en plein champ varie de 5 à plus de 40\,\%
+\cite{Barnaud_2008, DJE_2004, Doggett_1988,
+  Ellstrand_1983,Schmidt_2006}.
+
+Plusieurs espèces de pollinisateurs ont été observées consécutivement
+visitant des fleurs de sorgho cultivé \cite{Immelman_2000,
+  Schmidt_2006}. Lors de la collecte des insectes, des grains de
+pollen de sorgho ont été trouvés sur chacun de ceux-ci. Cependant, il
+n'a pas été déterminé si le déplacement des insectes occasionnait une
+pollinisation croisée. D'autres études doivent être réalisées pour
+déterminer l'importance de la pollinisation par les insectes chez le
+\emph{Sorghum bicolor}. La floraison et la pollinisation du
+\emph{Sorghum bicolor} sont décrites dans \citeA{House85},
+\citeA{SINGH_1997} et \citeA{SRINIVASA_2013}. L'inflorescence commence
+à se former 30 à 40 jours après la germination. Le sorgho cultivé
+fleurit généralement 55 à 70 jours après la germination en climats
+chauds, mais, selon le génotype, la plante peut fleurir 30 à 100 jours
+après la germination. Le temps humide et frais peut retarder la
+floraison. Les fleurs commencent à s'ouvrir deux jours après que
 l'inflorescence a émergé de la gaine. Les épillets (subdivisions de
 l'inflorescence qui comportent plusieurs fleurs) sessiles, situés au
 sommet de l'inflorescence, sont les premiers à fleurir, puis la
@@ -362,31 +355,32 @@ floraison se poursuit vers le bas de l'inflorescence durant 4 ou 5
 jours. Chaque panicule peut comprendre jusqu'à 6\,000 fleurons
 \cite{QUINBYKARPER_1947}. La floraison ne survient pas au même moment
 chez toutes les inflorescences dans un champ, de sorte que le pollen
-est généralement présent durant 10 à 15 jours. Le moment de la
-floraison varie en fonction du génotype et du climat, mais celle-ci se
-produit généralement du milieu de la nuit au milieu de la matinée et
-atteint son maximum vers le lever du soleil. Le gonflement des
-lodicules facilite l'ouverture des fleurs. Lorsque les stigmates
-deviennent visibles, le filet des étamines s'allonge, et les anthères
-deviennent pendantes. Une fois que les anthères sont sèches, le pore
-apical s'ouvre et le pollen est libéré. La majeure partie du pollen
-d'une inflorescence fertilise les ovules de la même inflorescence. La
-pollinisation croisée est possible lorsque le pollen est transporté
-dans les airs. Le stigmate est pollinisé avant que les anthères
-émergent des épillets. Les grains de pollen sont transportés jusqu'au
-stigmate et germent. Un tube pollinique se forme, et le grain de
-pollen divisé en deux noyaux descend dans le style pour aller
+est généralement présent durant 10 à 15 jours.
+
+Le moment de la floraison varie en fonction du génotype et du climat,
+mais celle-ci se produit généralement du milieu de la nuit au milieu
+de la matinée et atteint son maximum vers le lever du soleil. Le
+gonflement des lodicules facilite l'ouverture des fleurs. Lorsque les
+stigmates deviennent visibles, le filet des étamines s'allonge, et les
+anthères deviennent pendantes. Une fois que les anthères sont sèches,
+le pore apical s'ouvre et le pollen est libéré. La majeure partie du
+pollen d'une inflorescence fertilise les ovules de la même
+inflorescence. La pollinisation croisée est possible lorsque le pollen
+est transporté dans les airs. Le stigmate est pollinisé avant que les
+anthères émergent des épillets. Les grains de pollen sont transportés
+jusqu'au stigmate et germent. Un tube pollinique se forme, et le grain
+de pollen divisé en deux noyaux descend dans le style pour aller
 fertiliser l'ovule. Un noyau spermatique fertilise l'ovule et produit
 un embryon $2n$, et l'autre noyau fusionne avec les noyaux polaires
 pour produire un albumen $3n$. Après la pollinisation, les glumes se
 referment, et les anthères et stigmates vides en dépassent
 généralement. Certaines variétés à glumes longues sont cléistogames
 (les fleurons ne s'ouvrent pas pour la fertilisation). Les stigmates
-non fécondés demeurent réceptifs jusqu'à 16\,jours. Après la
+non fécondés demeurent réceptifs jusqu'à seize jours. Après la
 fertilisation, la différenciation des organes se déroule sur environ
 douze jours. Les graines passent par trois stades de développement
 ---\,laiteux, pâteux mou et pâteux dur\,--- et parviennent à maturité
-en environ 30\,jours.
+en environ 30 jours.
 
 \subsection{Intérêt et utilisation du sorgho}
 
@@ -400,97 +394,91 @@ après le maïs. Le Nigeria en est le premier producteur de la région
 avec 7\,\% de la production mondiale \cite{FAO_1995}. Le sorgho est la
 principale céréale cultivée au Burkina Faso, avec plus d'un million et
 demi
-d'hectare\,\footnote{\url{https://www.cirad.fr/nos-recherches/resultats-de-recherche/2016/la-selection-participative-du-sorgho-au-burkina-faso-creer-de-nouvelles-varietes-avec-et-pour-les-paysans}}. C'est
+d'hectares\footnote{\url{https://www.cirad.fr/nos-recherches/resultats-de-recherche/2016/la-selection-participative-du-sorgho-au-burkina-faso-creer-de-nouvelles-varietes-avec-et-pour-les-paysans}}. C'est
 la plus importante culture vivrière dans les régions tropicales
 semi-arides d'Afrique. Selon \citeA{Dahlberg_2011}, le sorgho est
 l'aliment de base de 500 millions de personnes dans plus de 30 pays de
-la zone tropicale semi-aride
-\,\footnote{\url{http://www.memoireonline.com/01/14/8569/m_Contribution--l-etude-des-contraintes-de-stockage-des-cereales-mil-mas-sorgho-en-zone-sud-s8.html}}.
+la zone tropicale
+semi-aride\footnote{\url{http://www.memoireonline.com/01/14/8569/m_Contribution--l-etude-des-contraintes-de-stockage-des-cereales-mil-mas-sorgho-en-zone-sud-s8.html}}.
 Sa culture y est pratiquée partout en saison des pluies, là où les
 précipitations sont supérieures à 400 à 500 mm. La superficie
 consacrée à la culture du sorgho est passée de 1\,016\,275 ha en
 2\,000 à 1\,619\,590 ha en 2007 \cite{FAO_2007} et couvrait en 2016
-1,8 millions d'hectares
-\,\footnote{\url{http://www.commodafrica.com/14-11-2016-la-production-de-sorgho-en-afrique-progresseraitr-de-23-en-20161}}. Dans
-les régions tropicales, le sorgho est essentiellement cultivé pour son
-grain destiné d'abord à l'alimentation humaine. Le grain peut être
-consommé entier ou décortiqué et réduit en poudre pour faire la
-bouillie, du couscous, des beignets du \emph{tô} (nom d'un des plats
-locaux cuisiné sous forme de pâte dans plusieurs pays d'Afrique
-subsaharienne dont le Burkina Faso). Le grain peut être fermenté pour
-donner des boissons alcoolisées: bière (\emph{dolo})\,\footnote{Le
-  dolo est une bière ancestrale obtenue par la fermentation du sorgho
-  rouge ou du mil germé et cuit dans l'eau. Elle tire son nom d'une
-  ville du Burkina Faso qui est le chef-lieu du département du même
-  nom, situé dans la province Bougouriba et dans la région Sud-Ouest.}
-ou du vin de
-sorgho\,\footnote{\url{https://www.doc-developpement-durable.org/file/Agriculture/Memento-de-l-Agronome_CIRAD.pdf}}.
-Les tiges de certains sorghos bicolor sont consommées en frais comme
-la canne à sucre et les résidus de récolte, soit l'ensemble des tiges
-sont employées pour la confection des nattes, dans la construction des
-maisons (matériaux de construction pour réaliser des palissades) et
-des enclos ou comme combustibles,les feuilles et panicules égrenées,
-représentent pour l'agriculteur une importante source de fourrage pour
-l'alimentation de son bétail \cite{Chantereau_1991}. Les graines
-(entiers) sont fournies directement aux volailles
-\cite{SaintClair_1989}. Les cendres servent à la préparation de la
-potasse alimentaire. La moelle de sorgho est utilisée comme support
-pour les coupes anatomiques. Certains sorghos à forte coloration
-tannique servent dans la teinture du cuir. Les extraits de composés
-phénoliques servent en cosmétique pour le bronzage
+1,8 millions
+d'hectares\footnote{\url{http://www.commodafrica.com/14-11-2016-la-production-de-sorgho-en-afrique-progresseraitr-de-23-en-20161}}.
+
+Dans les régions tropicales, le sorgho est essentiellement cultivé
+pour son grain, destiné d'abord à l'alimentation humaine. Le grain
+peut être consommé entier ou décortiqué et réduit en poudre pour faire
+de la bouillie, du couscous, des beignets ou du \emph{tô} (nom d'un
+des plats locaux cuisiné sous forme de pâte dans plusieurs pays
+d'Afrique subsaharienne dont le Burkina Faso). Le grain peut être
+fermenté pour donner des boissons alcoolisées : de la bière
+(\emph{dolo})\footnote{Le dolo est une bière ancestrale obtenue par la
+  fermentation du sorgho rouge ou du mil germé et cuit dans
+  l'eau. Elle tire son nom d'une ville du Burkina Faso qui est le
+  chef-lieu du département du même nom, situé dans la province
+  Bougouriba et dans la région Sud-Ouest.} ou du vin de
+sorgho\footnote{\url{https://www.doc-developpement-durable.org/file/Agriculture/Memento-de-l-Agronome_CIRAD.pdf}}.
+
+Les tiges de certains \emph{Sorghum bicolor} sont consommées en frais
+comme la canne à sucre et les résidus de récolte, soit l'ensemble des
+tiges sont employées pour la confection des nattes, dans la
+construction des maisons (matériaux de construction pour réaliser des
+palissades) et des enclos ou comme combustibles,les feuilles et
+panicules égrenées, représentent pour l'agriculteur une importante
+source de fourrage pour l'alimentation de son bétail
+\cite{Chantereau_1991}. Les graines (entiers) sont fournies
+directement aux volailles \cite{SaintClair_1989}. Les cendres servent
+à la préparation de la potasse alimentaire. Certains sorghos à forte
+coloration tannique servent dans la teinture du cuir. Les extraits de
+composés phénoliques servent en cosmétique pour le bronzage
 \cite{BARRO_KONDOMBO_2010}. Si dans les principales régions
 productrices d'Afrique et d'Asie, plus de 70\,\% du sorgho sont
 consommés par les habitants aux Amériques et en Océanie, par contre la
 plus grande partie de la production sert à l'alimentation animale
 \cite{BARRO_KONDOMBO_2010}. La culture a également une vocation
-industrielle orientée sur la production de la pâte à papier, la
-production du fuel,
-etc\,\footnote{\url{http://www.memoireonline.com/01/16/9362/m_Etude-de-la-diversite-agro-morphologique-du-sorgho-et-identification-de-cultivars-tolerants-au-str11.html}}.
+industrielle orientée sur la production de la pâte à papier ou la
+production de
+fuel\footnote{\url{http://www.memoireonline.com/01/16/9362/m_Etude-de-la-diversite-agro-morphologique-du-sorgho-et-identification-de-cultivars-tolerants-au-str11.html}}.
 
-En novembre 2016, l'USDA (United States Department of Agriculture) a résumé les situations africaine et mondiale de production du sorgho (Tableau 2):
-
-% \newpage
-
-% \begin{figure}%
-%   \begin{center}
-%     \includegraphics[width=14cm]{images/WorldSorghumStatisticsUsda}
-%   \end{center}
-%   \caption{Tableau 1: Situations africaines et mondiale de production du sorgho, selon l'USDA;p.:
-%   la production réelle et est.:les estimations}
-% \end{figure}
-
-
+En novembre 2016, l'USDA (\emph{United States Department of
+  Agriculture}) a résumé les situations africaine et mondiale de
+production du sorgho (Tableau \ref{tab:USDA_global_sorgho_production}
+p.~\pageref{tab:USDA_global_sorgho_production}).
 
 \begin{table}
   \begin{footnotesize}
     \begin{center}
-      \begin{tabular}{|l|c|r|p{4cm}|}
-        \hline
-        \multirow{3}{*}{Localisation} & \textbf{Superficies}      & \textbf{Rendements}  & \textbf{Production}          \\ \cline{2-3} \cline{3-4} \cline{4-4}
-                                      & Millions ha      &  T/ha      & Millions de tonnes   \\ 
-                                      & 2015/16\,(p.) 2016/17\,(est.) & 2015/16\,(p.)  2016/17\,(est.) & 2015/16\,(p.) 2016/17\,(est)        \\ \hline
-        \multirow{1}{*}{\textbf{Monde}} & 42.54  \, 42.49 & 1.41  \, 1.51 & 60.16 \, 64.20 \\ \hline
-        \multirow{1}{*}{Afrique} & 24.09 \, 24.41 & 1.35 \, 1.49 & 19.39 \, 23.9 \\ \hline
-        \multirow{1}{*}{Nigeria} & 5.30  \, 5.30 & 1.16  \, 1.23 & 6.15 \, 6.50 \\ \hline
-        \multirow{1}{*}{Burkina} & 1.80  \, 1.80 & 0.80  \, 1.06 & 1.44 \, 1.90 \\ \hline
-        \multirow{1}{*}{Mali} & 1.30  \, 1.30 & 1  \, 1  & 1.30  \, 1.30  \\ \hline
-        \multirow{1}{*}{Niger} & 3.50  \, 3.50 & 0.55  \, 0.37  & 1.92  \, 1.30  \\ \hline
-        \multirow{1}{*}{Ghana} & 0.25  \, 0.25 & 1.05  \, 1.20  & 0.26  \, 0.30  \\ \hline
-        \multirow{1}{*}{\textbf{Sous total Afrique Ouest}} & 12.15  \, 12.15 & 0.912 \, 0.972  & 11.07  \, 11.3  \\ \hline
-        \multirow{1}{*}{Ethiopie} & 1.50  \, 1.80 & 1.73  \, 2.06  & 2.60  \, 3.70  \\ \hline
-        \multirow{1}{*}{Soudan} & 8  \, 8 & .30  \, 0.69  & 2.39  \, 5.50  \\ \hline
-        \multirow{1}{*}{Cameroun} & 0.80  \, 0.80 & 1.73  \, 2.06  & 2.60  \, 3.70  \\ \hline
-        \multirow{1}{*}{Tanzanie} & 0.80  \, 0.80 & 1.03  \, 1  & 0.82  \, 0.80  \\ \hline
-        \multirow{1}{*}{Egypte} & 0.14  \, 0.14 & 5.36  \, 5.36  & 0.75  \, 0.75  \\ \hline
-        \multirow{1}{*}{Ouganda} & 0.35  \, 0.35 & 0.91  \, 0.91  & 0.32  \, 0.32  \\ \hline
-        \multirow{1}{*}{Mozambique} & 0.30  \, 0.30 & 0.72  \, 0.67  & 0.22  \, 0.20  \\ \hline
-        \multirow{1}{*}{Afrique du Sud} & 0.05  \, 0.07 & 1.51  \, 2.50  & 0.07  \, 0.18  \\ \hline
+      \begin{tabular}{ld{2.3}d{2.3}d{2.3}d{2.3}d{2.3}d{2.3}}
+        \multirow{3}{*}{} & \multicolumn{2}{c}{\textbf{Superficies}} & \multicolumn{2}{c}{\textbf{Rendements}} & \multicolumn{2}{c}{\textbf{Production}} \\
+                          & \multicolumn{2}{c}{(millions ha)} & \multicolumn{2}{c}{(tonnes/ha)} & \multicolumn{2}{c}{(mégatonnes)} \\
+                          & \multicolumn{1}{c}{2015/16} & \multicolumn{1}{c}{2016/17} & \multicolumn{1}{c}{2015/16} & \multicolumn{1}{c}{2016/17} & \multicolumn{1}{c}{2015/16} & \multicolumn{1}{c}{2016/17} \\ \hline
+        Nigeria        & 5,30  & 5,30 & 1,16  & 1,23  & 6,15  & 6,50 \\
+        Burkina        & 1,80  & 1,80 & 0,80  & 1,06  & 1,44  & 1,90 \\
+        Mali           & 1,30  & 1,30 & 1     & 1     & 1,30  & 1,30  \\
+        Niger          & 3,50  & 3,50 & 0,55  & 0,37  & 1,92  & 1,30  \\
+        Ghana          & 0,25  & 0,25 & 1,05  & 1,20  & 0,26  & 0,30  \\ \hline
+        \textbf{Afrique de l'Ouest} & 12,15  & 12,15 & 0,912 & 0,972  & 11,07  & 11,3  \\ \hline
+        Ethiopie       & 1,50  & 1,80 & 1,73  & 2,06  & 2,60  & 3,70  \\
+        Soudan         & 8     & 8    & ,30   & 0,69  & 2,39  & 5,50  \\
+        Cameroun       & 0,80  & 0,80 & 1,73  & 2,06  & 2,60  & 3,70  \\
+        Tanzanie       & 0,80  & 0,80 & 1,03  & 1     & 0,82  & 0,80  \\
+        Egypte         & 0,14  & 0,14 & 5,36  & 5,36  & 0,75  & 0,75  \\
+        Ouganda        & 0,35  & 0,35 & 0,91  & 0,91  & 0,32  & 0,32  \\
+        Mozambique     & 0,30  & 0,30 & 0,72  & 0,67  & 0,22  & 0,20  \\
+        Afrique du Sud & 0,05  & 0,07 & 1,51  & 2,50  & 0,07  & 0,18  \\ \hline
+        Afrique        & 24,09 & 24,41 & 1,35 & 1,49  & 19,39 & 23,9 \\
+        \textbf{Monde} & 42,54  & 42,49 & 1,41 & 1,51 & 60,16 & 64,20 \\ \hline
       \end{tabular}
-      \caption{Situations africaines et mondiale de production du sorgho, selon l'USDA avec la production réelle (p.) et les estimations (est.)\protect\footnote{\protect\url{http://www.commodafrica.com/14-11-2016-la-production-de-sorgho-en-afrique-progresseraitr-de-23-en-20161}}.}
+      \caption{Situations africaines et mondiale de production du
+        sorgho, selon l'USDA avec la production réelle (2015-2016) et
+        les estimations
+        (2016-2017)\protect\footnote{\protect\url{http://www.commodafrica.com/14-11-2016-la-production-de-sorgho-en-afrique-progresseraitr-de-23-en-20161}}.}
+      \label{tab:USDA_global_sorgho_production2}
     \end{center}
   \end{footnotesize}
 \end{table}
-
 
 
 \section{Le niébé: \emph{Vigna unguiculata} (L.) Walp.}
@@ -927,7 +915,7 @@ l'azote dans les systèmes de cultures
 \cite{Ndakidemi_2005,Fustec11}. Lors de la fixation d'azote
 atmosphérique, les légumineuses contribuent à la teneur en azote (N)
 du sol sous forme organique ou
-minérale\,\footnote{\url{http://fertilisation-edu.fr/cycles-bio-geo-chimiques/le-cycle-de-l-azote-n.html}}
+minérale\footnote{\url{http://fertilisation-edu.fr/cycles-bio-geo-chimiques/le-cycle-de-l-azote-n.html}}
 (nitrates) soit en tant que cultures pures en rotation ou, en
 association \cite{Bado_2006,Chu_2004,Makoi_2009,Ndakidemi_2005}. En
 culture associée par exemple, les légumineuses peuvent augmenter la
