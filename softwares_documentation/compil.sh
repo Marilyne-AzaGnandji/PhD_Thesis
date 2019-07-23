@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARGET="revue_bibliographique"
+TARGET="fastqc_multiqc"
 
 pdflatex ${TARGET}.tex
 bibtex ${TARGET}
