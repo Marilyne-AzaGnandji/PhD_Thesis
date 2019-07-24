@@ -1,0 +1,83 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[frenchb]{babel}
+\usepackage{subfig}
+\usepackage{apacite}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{,}{,}{#1}}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Fastqc \& Multiqc review}
+\author{Marilyne Aza-Gnandji}
+\date{\today}
+
+\maketitle
+\tableofcontents
+
+\section{Généralités}
+
+FastQC est un logiciel qui a été développé par Simon
+Andrews\footnote{{https://github.com/s-andrews/FastQC}} et permet de
+faire une analyse de la qualité de données de séquençage NGS (ADN/
+ARN). En effet, les séquenceurs modernes à haut débit peuvent générer
+des dizaines de millions de séquences en une seule fois.  Avant
+l'analyse proprement dite de ces séquences, afin de tirer des
+conclusions biologiques, il est essentiel d'effectuer des contrôles de
+qualité simples.  Il s'agit de s'assurer que dans les données brutes
+obtenues, il n'y a pas de problèmes ni de biais qui pourraient influer
+sur les connaissances que l'on cherche à extraire de leurs
+exploitations. La plupart des séquenceurs génèrent un rapport de
+contrôle qualité dans le cadre de leur pipeline d’analyses, mais cela
+ne concerne généralement que l’identification des problèmes générés
+par le séquenceur lui-même. FastQC a pour objectif de fournir un
+rapport de contrôle qualité capable de détecter les problèmes dans le
+séquenceur ou dans la bibliothèque de départ. FastQC peut être exécuté
+dans l'un des deux modes. Il peut soit fonctionner comme une
+application interactive autonome pour l’analyse immédiate de petits
+nombres de fichiers FastQ, ou il peut être exécuté dans un mode non
+interactif où il conviendrait de l’intégrer dans un pipeline
+d’analyses plus grand pour le traitement systématique d’un grand
+nombre de
+fichiers\footnote{\url{https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf}}.
+FastQC lit un ensemble de fichiers de séquences et produit à partir de
+chacun d'eux un rapport de contrôle de la qualité composé d'un certain
+nombre de modules différents. Chaque module permettra d'identifier un
+type de problème potentiel sur les données. Le logiciel prend en
+entrée des fichiers au format sam, bam et fastq. Il faut dire que les
+données sont généralement fournies au format FASTQ et si ce n'est pas
+le cas, il existe des outils de conversion pour obtenir des fichiers
+FASTQ\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. Le
+logiciel peut aussi lire directement les fichiers .fastq.gz.  Dans le
+cadre de nos analyses avec 80 échantillons, nous avons choisi la
+deuxième option d'utilisation du logiciel i.e son intégration dans un
+pipeline d'analyses.
+
+\section{Mode d'utilisation}
+
+\subsection{Principales fonctions}
+
+\begin{itemize}
+  \item Importation de données à partir de fichiers BAM, SAM ou FastQ
+    (toute variante);
+   \item Fournir un aperçu rapide pour vous dire dans quels domaines
+     il peut y avoir des problèmes;
+    \item Des graphiques et des tableaux récapitulatifs pour évaluer
+      rapidement vos données;
+     \item Exportation des résultats dans un rapport permanent basé
+       sur HTML;
+      \item Opération hors ligne pour permettre la génération
+        automatisée de rapports sans exécuter l'application
+        interactive.
+\end{itemize}
+
+\end{document}
