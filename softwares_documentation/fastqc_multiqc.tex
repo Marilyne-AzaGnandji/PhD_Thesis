@@ -33,21 +33,33 @@ ARN). En effet, les séquenceurs modernes à haut débit peuvent générer
 des dizaines de millions de séquences en une seule fois.  Avant
 l'analyse proprement dite de ces séquences, afin de tirer des
 conclusions biologiques, il est essentiel d'effectuer des contrôles de
-qualité simples.  Il s'agit de s'assurer que dans les données brutes
+qualité simples. Généralement, cette étape est effectuée
+par le prestataire. Néanmoins grâce à FastQC, il est possible de
+déterminer par soi-même, entre autres :
+\begin{itemize}
+  \item[\textbullet] le nombre de lectures (reads)
+   \item[\textbullet] la qualité des lectures
+    \item[\textbullet] la longueur des lectures
+     \item[\textbullet] une éventuelle contamination
+     \item[\textbullet] la présence suspecte d'adaptateurs
+       \item[\textbullet]
+         ...\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}.
+\end{itemize}
+Il s'agit de s'assurer que dans les données brutes
 obtenues, il n'y a pas de problèmes ni de biais qui pourraient influer
 sur les connaissances que l'on cherche à extraire de leurs
 exploitations. La plupart des séquenceurs génèrent un rapport de
 contrôle qualité dans le cadre de leur pipeline d’analyses, mais cela
 ne concerne généralement que l’identification des problèmes générés
-par le séquenceur lui-même. FastQC a pour objectif de fournir un
-rapport de contrôle qualité capable de détecter les problèmes dans le
-séquenceur ou dans la bibliothèque de départ. FastQC peut être exécuté
-dans l'un des deux modes. Il peut soit fonctionner comme une
-application interactive autonome pour l’analyse immédiate de petits
-nombres de fichiers FastQ, ou il peut être exécuté dans un mode non
-interactif où il conviendrait de l’intégrer dans un pipeline
-d’analyses plus grand pour le traitement systématique d’un grand
-nombre de
+par le séquenceur lui-même.
+FastQC a pour objectif de fournir un rapport de contrôle qualité
+capable de détecter les problèmes dans le séquenceur ou dans la
+bibliothèque de départ. FastQC peut être exécuté dans l'un des deux
+modes. Il peut soit fonctionner comme une application interactive
+autonome pour l’analyse immédiate de petits nombres de fichiers FastQ,
+ou il peut être exécuté dans un mode non interactif où il conviendrait
+de l’intégrer dans un pipeline d’analyses plus grand pour le
+traitement systématique d’un grand nombre de
 fichiers\footnote{\url{https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf}}.
 FastQC lit un ensemble de fichiers de séquences et produit à partir de
 chacun d'eux un rapport de contrôle de la qualité composé d'un certain
@@ -77,7 +89,7 @@ pipeline d'analyses.
        sur HTML;
       \item Opération hors ligne pour permettre la génération
         automatisée de rapports sans exécuter l'application
-        interactive.
+        interactive\footnote{http://www.bioinformatics.babraham.ac.uk/projects/fastqc/}.
 \end{itemize}
 
 \end{document}
