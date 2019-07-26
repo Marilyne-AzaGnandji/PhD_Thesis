@@ -33,9 +33,9 @@ ARN). En effet, les séquenceurs modernes à haut débit peuvent générer
 des dizaines de millions de séquences en une seule fois.  Avant
 l'analyse proprement dite de ces séquences, afin de tirer des
 conclusions biologiques, il est essentiel d'effectuer des contrôles de
-qualité simples. Généralement, cette étape est effectuée
-par le prestataire. Néanmoins grâce à FastQC, il est possible de
-déterminer par soi-même, entre autres :
+qualité simples. Généralement, cette étape est effectuée par le
+prestataire. Néanmoins grâce à FastQC, il est possible de déterminer
+par soi-même, entre autres :
 \begin{itemize}
   \item[\textbullet] le nombre de lectures (reads)
    \item[\textbullet] la qualité des lectures
@@ -45,21 +45,20 @@ déterminer par soi-même, entre autres :
        \item[\textbullet]
          ...\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}.
 \end{itemize}
-Il s'agit de s'assurer que dans les données brutes
-obtenues, il n'y a pas de problèmes ni de biais qui pourraient influer
-sur les connaissances que l'on cherche à extraire de leurs
-exploitations. La plupart des séquenceurs génèrent un rapport de
-contrôle qualité dans le cadre de leur pipeline d’analyses, mais cela
-ne concerne généralement que l’identification des problèmes générés
-par le séquenceur lui-même.
-FastQC a pour objectif de fournir un rapport de contrôle qualité
-capable de détecter les problèmes dans le séquenceur ou dans la
-bibliothèque de départ. FastQC peut être exécuté dans l'un des deux
-modes. Il peut soit fonctionner comme une application interactive
-autonome pour l’analyse immédiate de petits nombres de fichiers FastQ,
-ou il peut être exécuté dans un mode non interactif où il conviendrait
-de l’intégrer dans un pipeline d’analyses plus grand pour le
-traitement systématique d’un grand nombre de
+Il s'agit de s'assurer que dans les données brutes obtenues, il n'y a
+pas de problèmes ni de biais qui pourraient influer sur les
+connaissances que l'on cherche à extraire de leurs exploitations. La
+plupart des séquenceurs génèrent un rapport de contrôle qualité dans
+le cadre de leur pipeline d’analyses, mais cela ne concerne
+généralement que l’identification des problèmes générés par le
+séquenceur lui-même.  FastQC a pour objectif de fournir un rapport de
+contrôle qualité capable de détecter les problèmes dans le séquenceur
+ou dans la bibliothèque de départ. FastQC peut être exécuté dans l'un
+des deux modes. Il peut soit fonctionner comme une application
+interactive autonome pour l’analyse immédiate de petits nombres de
+fichiers FastQ, ou il peut être exécuté dans un mode non interactif où
+il conviendrait de l’intégrer dans un pipeline d’analyses plus grand
+pour le traitement systématique d’un grand nombre de
 fichiers\footnote{\url{https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf}}.
 FastQC lit un ensemble de fichiers de séquences et produit à partir de
 chacun d'eux un rapport de contrôle de la qualité composé d'un certain
@@ -91,5 +90,106 @@ pipeline d'analyses.
         automatisée de rapports sans exécuter l'application
         interactive\footnote{http://www.bioinformatics.babraham.ac.uk/projects/fastqc/}.
 \end{itemize}
+
+\subsection{Exemples de résultats et interprétations}
+
+Pour un usage généraliste, FastQC est particulièrement adapté. Il
+permet une visualisation graphique des différentes métriques d'intérêt
+avec un code
+couleur\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. A
+partir de nos données d'étude, voici les informations que l'on peut
+obtenir en utilisant FastQC:
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics1_Sample1_R1}
+  \end{center}
+  \caption{Qualité de séquence par base}
+  \label{fig-FastqcMetrics1_Sample1_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics2_Sample1_R1}
+  \end{center}
+  \caption{Qualité de séquence par quartile}
+  \label{fig-FastqcMetrics2_Sample1_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics3_Sample1_R1}
+  \end{center}
+  \caption{Scores de qualité par séquence}
+  \label{fig-FastqcMetrics3_Sample1_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics4_Sample1_R1}
+  \end{center}
+  \caption{Contenu en séquences par base}
+  \label{fig-FastqcMetrics4_Sample1_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics5_Sample1_R1}
+  \end{center}
+  \caption{Contenu en GC par séquence}
+  \label{fig-FastqcMetrics1_Sample5_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics6_Sample1_R1}
+  \end{center}
+  \caption{Contenu en \,"N\," par base}
+  \label{fig-FastqcMetrics1_Sample6_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics7_Sample1_R1}
+  \end{center}
+  \caption{Distribution des séquences par taille}
+  \label{fig-FastqcMetrics1_Sample7_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics8_Sample1_R1}
+  \end{center}
+  \caption{Niveaux de duplication par séquence}
+  \label{fig-FastqcMetrics1_Sample8_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics9_Sample1_R1}
+  \end{center}
+  \caption{Séquences sur-représentées}
+  \label{fig-FastqcMetrics1_Sample9_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics10_Sample1_R1}
+  \end{center}
+  \caption{Contenu en adaptateurs}
+  \label{fig-FastqcMetrics1_Sample10_R1}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/FastqcMetrics11_Sample1_R1}
+  \end{center}
+  \caption{Contenu en kmers}
+  \label{fig-FastqcMetrics1_Sample11_R1}
+\end{figure}
+
+
+
 
 \end{document}
