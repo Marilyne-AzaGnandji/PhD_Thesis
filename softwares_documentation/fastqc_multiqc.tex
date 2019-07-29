@@ -100,94 +100,82 @@ couleur\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_co
 partir de nos données d'étude, voici les informations que l'on peut
 obtenir en utilisant FastQC:
 
+La figure 1 montre une représentation dans le mauvais cas et dans le
+bon cas de la distribution par base du score de qualité. Dans les
+lectures (reads) générés par Illumina, la qualité diminue généralement vers
+l'extrémité 3'.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics1_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots1}
   \end{center}
   \caption{Qualité de séquence par base}
-  \label{fig-FastqcMetrics1_Sample1_R1}
+  \label{fig-Fastqc_Plots1}
 \end{figure}
+
+Cette représentation de la figure 2 nous permet de détecter un sous-ensemble de séquences de basse qualité et de définir un seuil de qualité.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics2_Sample1_R1}
-  \end{center}
-  \caption{Qualité de séquence par quartile}
-  \label{fig-FastqcMetrics2_Sample1_R1}
-\end{figure}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics3_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots2}
   \end{center}
   \caption{Scores de qualité par séquence}
-  \label{fig-FastqcMetrics3_Sample1_R1}
+  \label{fig-Fastqc_Plots2}
 \end{figure}
+
+La représentation de la figure 3 nous permet de détecter la présence d'adaptateurs ou de mettre en évidence une fragmentation biaisée.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics4_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots3}
   \end{center}
   \caption{Contenu en séquences par base}
-  \label{fig-FastqcMetrics4_Sample1_R1}
+  \label{fig-Fastqc_Plots3}
 \end{figure}
+
+Dans la figure 4, nous notons des pics en contenu GC, ce qui traduit une éventuelle contamination.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics5_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots4}
   \end{center}
   \caption{Contenu en GC par séquence}
-  \label{fig-FastqcMetrics1_Sample5_R1}
+  \label{fig-Fastqc_Plots4}
 \end{figure}
+
+Les séquences sur-représentées comme représentées dans la figure 5 sont une indication d'une possible source de contamination.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics6_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots5}
   \end{center}
-  \caption{Contenu en \,"N\," par base}
-  \label{fig-FastqcMetrics1_Sample6_R1}
+  \caption{Les séquences sur-représentées}
+  \label{fig-Fastqc_Plots5}
 \end{figure}
+
+La figure 6 nous indique dans le mauvais cas de figure i.e la
+représentation de gauche qu'un niveau élevé de duplication est
+susceptible d'indiquer un biais d'enrichissement (par exemple, une
+suramplification de la PCR).
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics7_Sample1_R1}
-  \end{center}
-  \caption{Distribution des séquences par taille}
-  \label{fig-FastqcMetrics1_Sample7_R1}
-\end{figure}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics8_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots6}
   \end{center}
   \caption{Niveaux de duplication par séquence}
-  \label{fig-FastqcMetrics1_Sample8_R1}
+  \label{fig-Fastqc_Plots6}
 \end{figure}
+
+Sur la figure 7, est illustrée à gauche les problèmes potentiels des cellules d'écoulement (flowcell) d'Illumina.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics9_Sample1_R1}
+    \includegraphics[width=16cm]{Images/Fastqc_Plots7}
   \end{center}
-  \caption{Séquences sur-représentées}
-  \label{fig-FastqcMetrics1_Sample9_R1}
+  \caption{Distribution des séquences par taille}
+  \label{fig-Fastqc_Plots7}
 \end{figure}
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics10_Sample1_R1}
-  \end{center}
-  \caption{Contenu en adaptateurs}
-  \label{fig-FastqcMetrics1_Sample10_R1}
-\end{figure}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=16cm]{Images/FastqcMetrics11_Sample1_R1}
-  \end{center}
-  \caption{Contenu en kmers}
-  \label{fig-FastqcMetrics1_Sample11_R1}
-\end{figure}
 
 \newpage
 
