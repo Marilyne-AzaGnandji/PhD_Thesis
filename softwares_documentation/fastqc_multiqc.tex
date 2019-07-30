@@ -1,28 +1,18 @@
 \documentclass[a4paper,11pt]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage{mathpazo}
-\usepackage{gensymb}
-\usepackage{graphicx}
-\usepackage{url}
-\usepackage[frenchb]{babel}
-\usepackage{subfig}
-\usepackage{apacite}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{dcolumn}
-\newcolumntype{d}[1]{D{,}{,}{#1}}
-\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} \usepackage{mathpazo} \usepackage{gensymb}
+\usepackage{graphicx} \usepackage{url} \usepackage[frenchb]{babel}
+\usepackage{subfig} \usepackage{apacite} \usepackage{array}
+\usepackage{multirow} \usepackage{dcolumn}
+\newcolumntype{d}[1]{D{,}{,}{#1}} \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 
 \begin{document}
 
-\title{Fastqc \& Multiqc review}
-\author{Marilyne Aza-Gnandji}
+\title{Fastqc \& Multiqc review} \author{Marilyne Aza-Gnandji}
 \date{\today}
 
-\maketitle
-\tableofcontents
+\maketitle \tableofcontents
 
 \section{Généralités}
 
@@ -96,14 +86,15 @@ pipeline d'analyses.
 Pour un usage généraliste, FastQC est particulièrement adapté. Il
 permet une visualisation graphique des différentes métriques d'intérêt
 avec un code
-couleur\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. A
-partir de nos données d'étude, voici les informations que l'on peut
-obtenir en utilisant FastQC:
+couleur\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. Les
+figures 1 à 7 sont une illustration de quelques informations que l'on
+peut obtenir en utilisant FastQC:
 
-La figure 1 montre une représentation dans le mauvais cas et dans le
-bon cas de la distribution par base du score de qualité. Dans les
-lectures (reads) générés par Illumina, la qualité diminue généralement vers
-l'extrémité 3'.
+La Fig.~\ref{fig-Fastqc_Plots1} p.~\pageref{fig-Fastqc_Plots1} montre
+une représentation dans le mauvais cas et dans le bon cas de la
+distribution par base du score de qualité. Dans les lectures (reads)
+générés par Illumina, la qualité diminue généralement vers l'extrémité
+3'.
 
 \begin{figure}
   \begin{center}
@@ -113,7 +104,10 @@ l'extrémité 3'.
   \label{fig-Fastqc_Plots1}
 \end{figure}
 
-Cette représentation de la figure 2 nous permet de détecter un sous-ensemble de séquences de basse qualité et de définir un seuil de qualité.
+La représentation de la Fig.~\ref{fig-Fastqc_Plots2}
+p.~\pageref{fig-Fastqc_Plots2} nous permet de détecter un
+sous-ensemble de séquences de basse qualité et de définir un seuil de
+qualité.
 
 \begin{figure}
   \begin{center}
@@ -123,7 +117,9 @@ Cette représentation de la figure 2 nous permet de détecter un sous-ensemble d
   \label{fig-Fastqc_Plots2}
 \end{figure}
 
-La représentation de la figure 3 nous permet de détecter la présence d'adaptateurs ou de mettre en évidence une fragmentation biaisée.
+La représentation de la Fig.~\ref{fig-Fastqc_Plots3}
+p.~\pageref{fig-Fastqc_Plots3} nous permet de détecter la présence
+d'adaptateurs ou de mettre en évidence une fragmentation biaisée.
 
 \begin{figure}
   \begin{center}
@@ -133,7 +129,9 @@ La représentation de la figure 3 nous permet de détecter la présence d'adapta
   \label{fig-Fastqc_Plots3}
 \end{figure}
 
-Dans la figure 4, nous notons des pics en contenu GC, ce qui traduit une éventuelle contamination.
+Dans la Fig.~\ref{fig-Fastqc_Plots4} p.~\pageref{fig-Fastqc_Plots4},
+nous notons des pics en contenu GC, ce qui traduit une éventuelle
+contamination.
 
 \begin{figure}
   \begin{center}
@@ -143,7 +141,9 @@ Dans la figure 4, nous notons des pics en contenu GC, ce qui traduit une éventu
   \label{fig-Fastqc_Plots4}
 \end{figure}
 
-Les séquences sur-représentées comme représentées dans la figure 5 sont une indication d'une possible source de contamination.
+Les séquences sur-représentées comme illustrées dans la
+Fig.~\ref{fig-Fastqc_Plots5} p.~\pageref{fig-Fastqc_Plots5} sont une
+indication d'une possible source de contamination.
 
 \begin{figure}
   \begin{center}
@@ -153,10 +153,10 @@ Les séquences sur-représentées comme représentées dans la figure 5 sont une
   \label{fig-Fastqc_Plots5}
 \end{figure}
 
-La figure 6 nous indique dans le mauvais cas de figure i.e la
-représentation de gauche qu'un niveau élevé de duplication est
-susceptible d'indiquer un biais d'enrichissement (par exemple, une
-suramplification de la PCR).
+La Fig.~\ref{fig-Fastqc_Plots6} p.~\pageref{fig-Fastqc_Plots6} nous
+indique dans le mauvais cas de figure i.e la représentation de gauche
+qu'un niveau élevé de duplication est susceptible d'indiquer un biais
+d'enrichissement (par exemple, une suramplification de la PCR).
 
 \begin{figure}
   \begin{center}
@@ -166,7 +166,9 @@ suramplification de la PCR).
   \label{fig-Fastqc_Plots6}
 \end{figure}
 
-Sur la figure 7, est illustrée à gauche les problèmes potentiels des cellules d'écoulement (flowcell) d'Illumina.
+Sur la Fig.~\ref{fig-Fastqc_Plots7} p.~\pageref{fig-Fastqc_Plots7},
+est illustrée à gauche les problèmes potentiels des cellules
+d'écoulement (flowcell) d'Illumina.
 
 \begin{figure}
   \begin{center}
@@ -183,9 +185,104 @@ MultiQC a été développé par Phil
 EWELS\footnote{{https://github.com/ewels/MultiQC/tree/master/docs}}. C'est
 un outil permettant d’agréger les résultats de la bioinformatique sur
 de nombreux échantillons dans un seul rapport. Dans notre cas, nous
-utilisons MultiQC pour visualiser les métriques issues de FastQC de tous les
-échantillons en un seul rapport(fichier .html).
+utilisons MultiQC pour visualiser les métriques issues de FastQC de
+tous les échantillons en un seul rapport(fichier .html).  A partir de
+nos données d'étude, nous présentons quelques informations que MultiQC
+fournit:
 
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots1}
+  \end{center}
+  \caption{Histogramme de qualité des séquences de
+    \og{}paired-end-reads\fg{} de 79 échantillons}
+  \label{fig-MultiQC_Plots1}
+\end{figure}
 
+La Fig.~\ref{fig-MultiQC_Plots1} p.~\pageref{fig-MultiQC_Plots1} nous
+montre la valeur moyenne de qualité des séquences à travers chaque
+position de base des lectures (reads) et nous indique que le score de
+qualité de toutes nos séquences de reads est supérieure à 30. Cela
+signifie qu'il n'y a pas de problèmes potentiels avec les bases
+constituant nos séquences. En effet, le score de qualité est relié de
+façon logarithmique à la probabilité d'erreur. Cette probabilité
+d'erreur est calculée lors de l'identification d'une base et
+correspond à la probabilité qu'il s'agisse d'une mauvaise
+identification. Concrètement, un score de 20 signifie qu'il existe une
+chance sur 100 pour que la base soit fausse. Un score de 30 à une
+chance sur 1000.
+
+MultiQC présente au travers de la représentation de la
+Fig.~\ref{fig-MultiQC_Plots2} p.~\pageref{fig-MultiQC_Plots2}, le
+nombre de lectures (reads) avec la moyenne respective des scores de
+qualité.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots2}
+  \end{center}
+  \caption{Score de qualité par séquence}
+  \label{fig-MultiQC_Plots2}
+\end{figure}
+
+MultiQC présente au travers de la représentation de la
+Fig.~\ref{fig-MultiQC_Plots3} p.~\pageref{fig-MultiQC_Plots3}, la
+proportion de chaque position de base pour laquelle chacune des quatre
+bases d'ADN normales a été appelée.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots3}
+  \end{center}
+  \caption{Contenu en bases par séquence}
+  \label{fig-MultiQC_Plots3}
+\end{figure}
+
+MultiQC présente au travers de la représentation de la
+Fig.~\ref{fig-MultiQC_Plots4} p.~\pageref{fig-MultiQC_Plots4}, le
+contenu moyen en GC des lectures.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots4}
+  \end{center}
+  \caption{Représentation du contenu en GC par lecture}
+  \label{fig-MultiQC_Plots4}
+\end{figure}
+
+Au travers de la représentation de la Fig.~\ref{fig-MultiQC_Plots5}
+p.~\pageref{fig-MultiQC_Plots5}, MultiQC nous renseigne sur le contenu
+en \og{}N\fg{} par séquence de reads. L'indication de N signifie qu'on
+ne sait exactement de laquelle des bases (A,T,C,G) il peut s'agir.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots5}
+  \end{center}
+  \caption{Contenu en \og{}N\fg{} par séquence}
+  \label{fig-MultiQC_Plots5}
+\end{figure}
+
+La Fig.~\ref{fig-MultiQC_Plots6} p.~\pageref{fig-MultiQC_Plots6}, le
+niveau relatif de duplication trouvé pour chaque séquence.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots6}
+  \end{center}
+  \caption{Niveaux de duplication par séquence}
+  \label{fig-MultiQC_Plots6}
+\end{figure}
+
+La Fig.~\ref{fig-MultiQC_Plots7} p.~\pageref{fig-MultiQC_Plots7},
+indique le contenu en adaptateurs.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=16cm]{Images/MultiQC_Plots7}
+  \end{center}
+  \caption{Contenu en adaptateurs}
+  \label{fig-MultiQC_Plots7}
+\end{figure}
 
 \end{document}
