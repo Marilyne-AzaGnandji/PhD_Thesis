@@ -1,7 +1,7 @@
 \documentclass[a4paper,11pt]{article}
 
 \usepackage[utf8]{inputenc} \usepackage{mathpazo} \usepackage{gensymb}
-\usepackage{graphicx} \usepackage{url} \usepackage[frenchb]{babel}
+\usepackage{graphicx} \usepackage{url} \usepackage[french]{babel}
 \usepackage{subfig} \usepackage{apacite} \usepackage{array}
 \usepackage{multirow} \usepackage{dcolumn}
 \newcolumntype{d}[1]{D{,}{,}{#1}} \usepackage[T1]{fontenc}
@@ -27,14 +27,15 @@ qualité simples. Généralement, cette étape est effectuée par le
 prestataire. Néanmoins grâce à FastQC, il est possible de déterminer
 par soi-même, entre autres :
 \begin{itemize}
-  \item[\textbullet] le nombre de lectures (reads)
-   \item[\textbullet] la qualité des lectures
-    \item[\textbullet] la longueur des lectures
-     \item[\textbullet] une éventuelle contamination
-     \item[\textbullet] la présence suspecte d'adaptateurs
-       \item[\textbullet]
-         ...\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}.
+\item[\textbullet] le nombre de lectures (reads)
+\item[\textbullet] la qualité des lectures
+\item[\textbullet] la longueur des lectures
+\item[\textbullet] une éventuelle contamination
+\item[\textbullet] la présence suspecte d'adaptateurs
+\item[\textbullet]
+  etc\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}.
 \end{itemize}
+
 Il s'agit de s'assurer que dans les données brutes obtenues, il n'y a
 pas de problèmes ni de biais qui pourraient influer sur les
 connaissances que l'on cherche à extraire de leurs exploitations. La
@@ -53,12 +54,12 @@ fichiers\footnote{\url{https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf}}.
 FastQC lit un ensemble de fichiers de séquences et produit à partir de
 chacun d'eux un rapport de contrôle de la qualité composé d'un certain
 nombre de modules différents. Chaque module permettra d'identifier un
-type de problème potentiel sur les données. Le logiciel prend en
-entrée des fichiers au format sam, bam et fastq. Il faut dire que les
-données sont généralement fournies au format FASTQ et si ce n'est pas
-le cas, il existe des outils de conversion pour obtenir des fichiers
-FASTQ\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. Le
-logiciel peut aussi lire directement les fichiers .fastq.gz.  Dans le
+type de problème potentiel sur les données.Le logiciel prend en entrée
+des fichiers au format sam, bam et fastq. Il faut dire que les données
+sont généralement fournies au format FASTQ et si ce n'est pas le cas,
+il existe des outils de conversion pour obtenir des fichiers
+FASTQ\footnote{\url{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. Le
+logiciel peut aussi lire directement les fichiers fastq.gz.  Dans le
 cadre de nos analyses avec 80 échantillons, nous avons choisi la
 deuxième option d'utilisation du logiciel i.e son intégration dans un
 pipeline d'analyses.
@@ -68,17 +69,17 @@ pipeline d'analyses.
 \subsection{Principales fonctions}
 
 \begin{itemize}
-  \item Importation de données à partir de fichiers BAM, SAM ou FastQ
-    (toute variante);
-   \item Fournir un aperçu rapide pour vous dire dans quels domaines
-     il peut y avoir des problèmes;
-    \item Des graphiques et des tableaux récapitulatifs pour évaluer
-      rapidement vos données;
-     \item Exportation des résultats dans un rapport permanent basé
-       sur HTML;
-      \item Opération hors ligne pour permettre la génération
-        automatisée de rapports sans exécuter l'application
-        interactive\footnote{http://www.bioinformatics.babraham.ac.uk/projects/fastqc/}.
+\item Importation de données à partir de fichiers BAM, SAM ou FastQ
+  (toute variante);
+\item Fournir un aperçu rapide pour vous dire dans quels domaines il
+  peut y avoir des problèmes;
+\item Des graphiques et des tableaux récapitulatifs pour évaluer
+  rapidement vos données;
+\item Exportation des résultats dans un rapport permanent basé sur
+  HTML;
+\item Opération hors ligne pour permettre la génération automatisée de
+  rapports sans exécuter l'application
+  interactive\footnote{\url{http://www.bioinformatics.babraham.ac.uk/projects/fastqc/}}.
 \end{itemize}
 
 \subsection{Exemples de résultats et interprétations}
@@ -86,7 +87,7 @@ pipeline d'analyses.
 Pour un usage généraliste, FastQC est particulièrement adapté. Il
 permet une visualisation graphique des différentes métriques d'intérêt
 avec un code
-couleur\footnote{{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. Les
+couleur\footnote{\url{http://genome.jouy.inra.fr/tutorials/QualityControl/quality_control.html}}. Les
 figures 1 à 7 sont une illustration de quelques informations que l'on
 peut obtenir en utilisant FastQC:
 
@@ -154,9 +155,10 @@ indication d'une possible source de contamination.
 \end{figure}
 
 La Fig.~\ref{fig-Fastqc_Plots6} p.~\pageref{fig-Fastqc_Plots6} nous
-indique dans le mauvais cas de figure i.e la représentation de gauche
-qu'un niveau élevé de duplication est susceptible d'indiquer un biais
-d'enrichissement (par exemple, une suramplification de la PCR).
+indique que nous sommes face à un mauvais cas de figure i.e la
+représentation de gauche qu'un niveau élevé de duplication est
+susceptible d'indiquer un biais d'enrichissement (par exemple, une
+suramplification de la PCR).
 
 \begin{figure}
   \begin{center}
@@ -184,11 +186,11 @@ traverser une fois à la fois un faisceau lumineux.
 \newpage
 
 MultiQC a été développé par Phil
-EWELS\footnote{{https://github.com/ewels/MultiQC/tree/master/docs}}. C'est
+EWELS\footnote{\url{https://github.com/ewels/MultiQC/tree/master/docs}}. C'est
 un outil permettant d’agréger les résultats de la bioinformatique sur
 de nombreux échantillons dans un seul rapport. Dans notre cas, nous
 utilisons MultiQC pour visualiser les métriques issues de FastQC de
-tous les échantillons en un seul rapport(fichier .html).  A partir de
+tous les échantillons en un seul rapport (fichier .html).  A partir de
 nos données d'étude, nous présentons quelques informations que MultiQC
 fournit:
 
@@ -265,8 +267,9 @@ ne sait exactement laquelle des bases (A,T,C,G) est concernée.
   \label{fig-MultiQC_Plots5}
 \end{figure}
 
-La Fig.~\ref{fig-MultiQC_Plots6} p.~\pageref{fig-MultiQC_Plots6}, renseigne sur le
-niveau relatif de duplication trouvé pour chaque séquence.
+La Fig.~\ref{fig-MultiQC_Plots6} p.~\pageref{fig-MultiQC_Plots6},
+renseigne sur le niveau relatif de duplication trouvé pour chaque
+séquence.
 
 \begin{figure}
   \begin{center}
