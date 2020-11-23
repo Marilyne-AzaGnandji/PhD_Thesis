@@ -1,6 +1,6 @@
 #!/bin/bash -
 
-TARGET="fastqc_multiqc"
+TARGET="atropos"
 
 pdflatex ${TARGET}.tex
 bibtex ${TARGET}
